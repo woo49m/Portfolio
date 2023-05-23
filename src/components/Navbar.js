@@ -2,14 +2,8 @@ import React from "react";
 import Link from "next/link";
 import Logo from "../components/Logo";
 import { useRouter } from "next/router";
-import {
-  FacebookIcon,
-  DribbbleIcon,
-  GithubIcon,
-  Insta,
-  TwitterIcon,
-} from "./Icons";
-
+import { FacebookIcon, GithubIcon, Insta } from "./Icons";
+import { motion } from "framer-motion";
 const CustomLink = ({ href, title, className = "" }) => {
   const router = useRouter();
   return (
@@ -38,15 +32,33 @@ const Navbar = () => {
       </nav>
 
       <nav className="flex items-center justify-center flex-wrap">
-        <a href="/" target={"_blank"}>
+        <motion.a
+          href="https://github.com/woo49m"
+          target={"_blank"}
+          className="w-[1.6rem] mr-[0.84rem]"
+          whileHover={{ y: -2 }}
+          whileTap={{ scale: 0.9 }}
+        >
           <GithubIcon />
-        </a>
-        <a href="/" target={"_blank"}>
+        </motion.a>
+        <motion.a
+          href="https://www.facebook.com/profile.php?id=100006633998705"
+          target={"_blank"}
+          className="w-6 mr-3"
+          whileHover={{ y: -2 }}
+          whileTap={{ scale: 0.9 }}
+        >
           <FacebookIcon />
-        </a>
-        <a href="/" target={"_blank"}>
+        </motion.a>
+        <motion.a
+          href="https://www.instagram.com/woo49m1128/"
+          target={"_blank"}
+          className="w-6 mr-3"
+          whileHover={{ y: -2 }}
+          whileTap={{ scale: 0.9 }}
+        >
           <Insta />
-        </a>
+        </motion.a>
       </nav>
 
       <div className="absolute left-[50%] top-2 translate-x-[50%]">
