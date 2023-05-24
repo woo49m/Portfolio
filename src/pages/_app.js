@@ -1,6 +1,7 @@
 import "@/styles/globals.css";
 import { Manrope, Montserrat } from "next/font/google";
 import Navbar from "../components/Navbar";
+import Footer from "@/components/Footer";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -15,6 +16,7 @@ export default function App({ Component, pageProps }) {
       >
         <Navbar></Navbar>
         <Component {...pageProps} />
+        <Footer />
       </main>
     </>
   );
