@@ -1,9 +1,6 @@
 import React from "react";
 import Layout from "./Layout";
 import Link from "next/link";
-import HireMe from "./HireMe";
-import lightBuld from "../../public/images/svgs/miscellaneous_icons_1.svg";
-import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -24,12 +21,6 @@ const Footer = () => {
         </div>
         <Link href={"/"}>hello</Link>
       </Layout>
-
-      <HireMe />
-
-      <div className=" absolute right-8 bottom-8 inline-block w-24">
-        <Image src={lightBuld} alt="CodeBuck" className="w-full h-auto"></Image>
-      </div>
     </footer>
   );
 };
