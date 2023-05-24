@@ -4,6 +4,7 @@ import Logo from "../components/Logo";
 import { useRouter } from "next/router";
 import { FacebookIcon, GithubIcon, Insta } from "./Icons";
 import { motion } from "framer-motion";
+
 const CustomLink = ({ href, title, className = "" }) => {
   const router = useRouter();
   return (
@@ -11,7 +12,7 @@ const CustomLink = ({ href, title, className = "" }) => {
       {title}
 
       <span
-        className={`h-[1px] bg-dark 
+        className={`h-[3px] bg-dark 
         absolute inline-block left-0 -bottom-0.5 group-hover:w-full transition-[width] ease-linear duration-300 ${
           router.asPath === href ? "w-full" : "w-0"
         }`}
@@ -24,18 +25,34 @@ const CustomLink = ({ href, title, className = "" }) => {
 const Navbar = () => {
   return (
     <header className=" w-full px-32 py-8 font-medium flex items-center justify-between">
-      <nav>
-        <CustomLink href="/" title={"Home"} className="mr-4" />
-        <CustomLink href="/about" title={"About"} className="mx-4" />
-        <CustomLink href="projects" title={"Projects"} className="mx-4" />
-        <CustomLink href="/articles" title={"Articles"} className="ml-4" />
+      <nav className="flex items-center justify-center ">
+        <CustomLink
+          href="/"
+          title={"Home"}
+          className="text-xl font-semibold mr-4"
+        />
+        <CustomLink
+          href="/about"
+          title={"About"}
+          className="text-xl font-semibold mx-4"
+        />
+        <CustomLink
+          href="projects"
+          title={"Projects"}
+          className="text-xl font-semibold mx-4"
+        />
+        <CustomLink
+          href="/articles"
+          title={"Articles"}
+          className="text-xl font-semibold ml-4"
+        />
       </nav>
 
       <nav className="flex items-center justify-center flex-wrap">
         <motion.a
           href="https://github.com/woo49m"
           target={"_blank"}
-          className="w-[1.6rem] mr-[0.84rem]"
+          className="w-12 mr-6 flex items-center justify-center"
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
         >
@@ -44,26 +61,22 @@ const Navbar = () => {
         <motion.a
           href="https://www.facebook.com/profile.php?id=100006633998705"
           target={"_blank"}
-          className="w-6 mr-3"
+          className="w-12 mr-6 flex items-center justify-center"
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
         >
-          <FacebookIcon />
+          <FacebookIcon className="w-12 h-12" />
         </motion.a>
         <motion.a
           href="https://www.instagram.com/woo49m1128/"
           target={"_blank"}
-          className="w-6 mr-3"
+          className="w-12 mr-6 flex items-center justify-center"
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
         >
-          <Insta />
+          <Insta className="w-12 h-12" />
         </motion.a>
       </nav>
-
-      <div className="absolute left-[50%] top-2 translate-x-[50%]">
-        <Logo />
-      </div>
     </header>
   );
 };

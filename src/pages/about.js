@@ -4,6 +4,8 @@ import AnimatedText from "@/components/AnimatedText";
 import Layout from "@/components/Layout";
 import Image from "next/image";
 import profilePic from "../../public/images/profile/developer-pic-2.jpg";
+import Skills from "../components/Skills";
+
 import {
   motionValue,
   useMotionValue,
@@ -106,6 +108,8 @@ const about = () => {
               </div>
             </div>
           </div>
+
+          <Skills />
         </Layout>
       </main>
     </>
