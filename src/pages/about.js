@@ -5,7 +5,7 @@ import Layout from "@/components/Layout";
 import Image from "next/image";
 import profilePic from "../../public/images/profile/developer-pic-2.jpg";
 import Skills from "../components/Skills";
-
+import Experience from "@/components/Experience";
 import {
   motionValue,
   useMotionValue,
@@ -41,7 +41,7 @@ const about = () => {
   return (
     <>
       <Head>
-        <title>About Page</title>
+        <title>Ian | About Page</title>
         <meta name="description" content="anu description"></meta>
       </Head>
       <main className="flex w-full flex-col items-center justify-center">
@@ -110,6 +110,7 @@ const about = () => {
           </div>
 
           <Skills />
+          <Experience />
         </Layout>
       </main>
     </>
