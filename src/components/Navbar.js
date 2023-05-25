@@ -37,14 +37,9 @@ const Navbar = () => {
           className="text-xl font-semibold mx-4"
         />
         <CustomLink
-          href="projects"
+          href="/projects"
           title={"Projects"}
           className="text-xl font-semibold mx-4"
-        />
-        <CustomLink
-          href="/articles"
-          title={"Articles"}
-          className="text-xl font-semibold ml-4"
         />
       </nav>
 
