@@ -34,7 +34,7 @@ const Skills = () => {
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className=" font-bold text-8xl mt-64 mb-32 w-full text-center text-dark"
+        className=" font-bold text-8xl mt-64 mb-32 w-full text-center text-dark dark:text-light"
       >
         Skills
       </motion.h2>
@@ -47,7 +47,9 @@ const Skills = () => {
           transition={{ duration: 1.5 }}
         >
           <CSS className="w-24 h-24 m-4" />
-          <h2 className="text-2xl font-bold text-dark/75">CSS</h2>
+          <h2 className="text-2xl font-bold text-dark/75 dark:text-light">
+            CSS
+          </h2>
         </motion.div>
         <motion.div
           initial={{ opacity: 0 }}
@@ -56,7 +58,9 @@ const Skills = () => {
           className="flex flex-col items-center justify-center hover:animate-bounce duration-200 ease-linear"
         >
           <HTML className="w-24 h-24 m-4" />
-          <h2 className="text-2xl font-bold text-dark/75">HTML</h2>
+          <h2 className="text-2xl font-bold text-dark/75 dark:text-light">
+            HTML
+          </h2>
         </motion.div>
         <motion.div
           initial={{ opacity: 0 }}
@@ -65,7 +69,9 @@ const Skills = () => {
           className="flex flex-col items-center justify-center hover:animate-bounce duration-200 ease-linear"
         >
           <Javascript className="w-24 h-24 m-4" />
-          <h2 className="text-2xl font-bold text-dark/75">Javascript</h2>
+          <h2 className="text-2xl font-bold text-dark/75 dark:text-light">
+            Javascript
+          </h2>
         </motion.div>
         <motion.div
           initial={{ opacity: 0 }}
@@ -74,7 +80,9 @@ const Skills = () => {
           className="flex flex-col items-center justify-center hover:animate-bounce duration-500 ease-linear"
         >
           <Git className="w-24 h-24 m-4" />
-          <h2 className="text-2xl font-bold text-dark/75">Git</h2>
+          <h2 className="text-2xl font-bold text-dark/75 dark:text-light">
+            Git
+          </h2>
         </motion.div>
         <motion.div
           initial={{ opacity: 0 }}
@@ -83,7 +91,9 @@ const Skills = () => {
           className="flex flex-col items-center justify-center hover:animate-bounce duration-200 ease-linear"
         >
           <ReactJS className="w-24 h-24 m-4" />
-          <h2 className="text-2xl font-bold text-dark/75">React</h2>
+          <h2 className="text-2xl font-bold text-dark/75 dark:text-light">
+            React
+          </h2>
         </motion.div>
         <motion.div
           initial={{ opacity: 0 }}
@@ -92,7 +102,9 @@ const Skills = () => {
           className="flex flex-col items-center justify-center hover:animate-bounce duration-200 ease-linear"
         >
           <Tailwind className="w-24 h-24 m-4" />
-          <h2 className="text-2xl font-bold text-dark/75">Tailwind</h2>
+          <h2 className="text-2xl font-bold text-dark/75 dark:text-light">
+            Tailwind
+          </h2>
         </motion.div>
         <motion.div
           initial={{ opacity: 0 }}
@@ -101,7 +113,9 @@ const Skills = () => {
           className="flex flex-col items-center justify-center hover:animate-bounce duration-200 ease-linear"
         >
           <Firebase className="w-24 h-24 m-4" />
-          <h2 className="text-2xl font-bold text-dark/75">Firebase</h2>
+          <h2 className="text-2xl font-bold text-dark/75 dark:text-light">
+            Firebase
+          </h2>
         </motion.div>
         <motion.div
           initial={{ opacity: 0 }}
@@ -109,8 +123,10 @@ const Skills = () => {
           transition={{ duration: 1.5 }}
           className="flex flex-col items-center justify-center hover:animate-bounce duration-200 ease-linear"
         >
-          <NextJs className="w-24 h-24 m-4" />
-          <h2 className="text-2xl font-bold text-dark/75">Next.JS</h2>
+          <NextJs className="w-24 h-24 m-4 dark:fill-white" />
+          <h2 className="text-2xl font-bold text-dark/75 dark:text-light/75">
+            Next.JS
+          </h2>
         </motion.div>
       </div>
     </>
