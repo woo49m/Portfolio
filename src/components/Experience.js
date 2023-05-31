@@ -49,7 +49,7 @@ const Experience = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
         className=" font-bold text-8xl mb-40 mt-32 w-full text-center text-dark dark:text-light
-        lg:!text-7xl sm:!text-6xl xs:!text-4xl  lg:mb-32 sm:mb-20 "
+        lg:!text-7xl sm:!text-6xl xs:!text-4xl uppercase lg:mb-32 sm:mb-20 "
       >
         Education & Experience
       </motion.h2>

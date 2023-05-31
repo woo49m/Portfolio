@@ -18,8 +18,8 @@ const Skills = () => {
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className=" font-bold text-8xl mt-64 mb-32 w-full text-center text-dark dark:text-light
-        lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8 md:mt-32"
+        className=" font-bold text-8xl mt-64 mb-32 w-full text-center  text-dark dark:text-light
+        lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8 md:mt-32 uppercase "
       >
         Skills
       </motion.h2>
