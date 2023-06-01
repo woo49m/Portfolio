@@ -5,14 +5,14 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import { GithubIcon2 } from "@/components/Icons";
-import project1 from "/images/projects/crypto-screener-cover-image.jpg";
+import project1 from "../../public/images/projects/crypto-screener-cover-image.jpg";
 import { motion } from "framer-motion";
 import TransitionEffect from "@/components/TransitionEffect";
 
-import amazon from "/images/projects/amazon.jpg";
-import netflix from "/images/projects/netflex.jpg";
-import gpt from "/images/projects/gpt.jpg";
-import weather from "/images/projects/weather.jpg";
+import amazon from "../../public/images/projects/amazon.jpg";
+import netflix from "../../public/images/projects/netflex.jpg";
+import gpt from "../../public/images/projects/gpt.jpg";
+import weather from "../../public/images/projects/weather.jpg";
 
 const FramerImage = motion(Image);
 
