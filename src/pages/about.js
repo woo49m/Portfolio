@@ -55,9 +55,9 @@ const about = () => {
             className="mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8 "
           />
           <div className="flex flex-col w-full items-center justify-center ">
-            <div className="w-2/3 xl:w-3/4 md:w-4/5 sm:w-5/6 xs:w-full bg-dark/75 dark:bg-gradient-to-tr from-gradient1 via-gradient2 to-gradient1 p-1 lg:p-[2px] shadow-md ">
+            <div className="w-2/3 xl:w-3/4 md:w-4/5 sm:w-5/6 xs:w-full rounded-md bg-dark/75 dark:bg-gradient-to-tr from-gradient1 via-gradient2 to-gradient1 p-1 lg:p-[2px] shadow-md ">
               <div
-                className="dark:bg-dark bg-light w-full flex flex-col items-center justify-center p-10 md:p-5
+                className="dark:bg-dark bg-light w-full rounded-md flex flex-col items-center justify-center p-10 md:p-5
                
              md:order-2 "
               >
@@ -65,25 +65,30 @@ const about = () => {
                   Bechelor Degree
                 </h2>
                 <p className="text-xl lg:text-lg md:text-base sm:text-sm font-medium text-justify ">
-                  Hi, My name is Ian. With the lively and easy-going
-                  personality, I actively participate in group activities.
-                  Moreover, I have appeal and influence in the group, so I often
-                  serve as the general convener or main cadre that make me have
-                  lot of experience in event organization and planning.
+                  Hi, My name is Ian. I am lively and easy-going, actively
+                  participate in group activities, and have appeal and influence
+                  in the group. Therefore, I often serve as the general convener
+                  or main cadre that make me have a lot of experience in event
+                  planning and executing.
                 </p>
                 <h2 className="mb-1 mt-8 text-2xl lg:text-xl font-bold  text-dark/75 dark:text-light/90">
                   Master Degree
                 </h2>
                 <p className="text-xl lg:text-lg md:text-base sm:text-sm font-medium text-justify ">
-                  During the period of master degree, I have completed three
-                  projects and one thesis. Project contains "Establish BIM
-                  Model", "A Construction Safety Judgment by Automatic
-                  Calculating Point Cloud" and "Application of MR and AI to
-                  Develop an Opening Safety Inspection System". In the face of
-                  many difficulties, I am not afraid of any challenges, and I am
-                  willing to break through myself. In the process, I aroused my
-                  interest in the information industry, which made me finally
-                  choose to go for it.
+                  The laboratory has introduced artificial intelligence,
+                  blockchain, point cloud, XR (AR, MR, VR) and other information
+                  technologies for many years to improve management efficiency.
+                  Due to the good benefits brought by emerging technologies, we
+                  often have the opportunity to conduct cooperation projects
+                  with external companies. During the period of master degree, I
+                  have completed three projects and one thesis. Projects contain
+                  "Establish BIM Model", "Intelligent security detection system"
+                  and "Application of MR and AI to Develop an Opening Safety
+                  Inspection System". In the face of many difficulties, I am not
+                  afraid of any challenges, and I am willing to break through
+                  myself. In the process, I aroused my interest in the
+                  information Engineering, which made me finally choose to go
+                  for it.
                 </p>
 
                 <h2 className="mb-1  mt-8 text-2xl lg:text-xl font-bold  text-dark/75 dark:text-light/90">

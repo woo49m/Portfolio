@@ -2,13 +2,11 @@ import Layout from "@/components/Layout";
 import Head from "next/head";
 import Image from "next/image";
 import profilePic from "../../public/images/profile/developer-pic-1.png";
-import profilePic2 from "../../public/images/profile/IMG_0584.PNG";
 import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import { LinkArrow } from "@/components/Icons";
 import HireMe from "@/components/HireMe";
 import TransitionEffect from "@/components/TransitionEffect";
-import ThreeD from "@/components/ThreeD";
 
 export default function Home() {
   return (
