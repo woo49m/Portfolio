@@ -1,3 +1,7 @@
+import amazon from "../../public/images/projects/amazon.jpg";
+import netflix from "../../public/images/projects/netflex.jpg";
+import gpt from "../../public/images/projects/gpt.jpg";
+import weather from "../../public/images/projects/weather.jpg";
 import AnimatedText from "@/components/AnimatedText";
 import Layout from "@/components/Layout";
 import React from "react";
@@ -8,11 +12,6 @@ import { GithubIcon2 } from "@/components/Icons";
 import project1 from "../../public/images/projects/crypto-screener-cover-image.jpg";
 import { motion } from "framer-motion";
 import TransitionEffect from "@/components/TransitionEffect";
-
-import amazon from "../../public/images/projects/amazon.jpg";
-import netflix from "../../public/images/projects/netflex.jpg";
-import gpt from "../../public/images/projects/gpt.jpg";
-import weather from "../../public/images/projects/weather.jpg";
 
 const FramerImage = motion(Image);
 
