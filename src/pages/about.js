@@ -82,13 +82,13 @@ const about = () => {
                   often have the opportunity to conduct cooperation projects
                   with external companies. During the period of master degree, I
                   have completed three projects and one thesis. Projects contain
-                  "Establish BIM Model", "Intelligent security detection system"
-                  and "Application of MR and AI to Develop an Opening Safety
-                  Inspection System". In the face of many difficulties, I am not
-                  afraid of any challenges, and I am willing to break through
-                  myself. In the process, I aroused my interest in the
-                  information Engineering, which made me finally choose to go
-                  for it.
+                  &quot;Establish BIM Model&quot;, &quot;Intelligent security
+                  detection system&quot; and &quot;Application of MR and AI to
+                  Develop an Opening Safety Inspection System&quot;. In the face
+                  of many difficulties, I am not afraid of any challenges, and I
+                  am willing to break through myself. In the process, I aroused
+                  my interest in the information Engineering, which made me
+                  finally choose to go for it.
                 </p>
 
                 <h2 className="mb-1  mt-8 text-2xl lg:text-xl font-bold  text-dark/75 dark:text-light/90">
