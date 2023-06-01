@@ -9,6 +9,11 @@ import project1 from "../../public/images/projects/crypto-screener-cover-image.j
 import { motion } from "framer-motion";
 import TransitionEffect from "@/components/TransitionEffect";
 
+import amazon from "../../public/images/projects/amazon.JPG";
+import netflix from "../../public/images/projects/netflex.JPG";
+import gpt from "../../public/images/projects/gpt.JPG";
+import weather from "../../public/images/projects/weather.JPG";
+
 const FramerImage = motion(Image);
 
 const FeatureProject = ({ type, title, summary, img, link, github }) => {
@@ -156,39 +161,40 @@ const projects = () => {
                 link="/"
                 type="Feature Project"
                 github="/"
-                img={project1}
+                img={netflix}
               />
             </motion.div>
             <motion.div
-              className=" col-span-6 sm:col-span-12"
+              className=" col-span-12"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.5 }}
               whileHover={{ scale: 1.01 }}
             >
-              <Project
+              <FeatureProject
                 title="Crypto Screener Application"
                 summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency."
                 link="/"
                 type="Feature Project"
                 github="/"
-                img={project1}
+                img={amazon}
               />
             </motion.div>
+
             <motion.div
-              className=" col-span-6 sm:col-span-12"
+              className=" col-span-12 "
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.5 }}
               whileHover={{ scale: 1.01 }}
             >
-              <Project
+              <FeatureProject
                 title="Crypto Screener Application"
                 summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency."
                 link="/"
                 type="Feature Project"
                 github="/"
-                img={project1}
+                img={weather}
               />
             </motion.div>
             <motion.div
@@ -204,23 +210,7 @@ const projects = () => {
                 link="/"
                 type="Feature Project"
                 github="/"
-                img={project1}
-              />
-            </motion.div>
-            <motion.div
-              className=" col-span-6 sm:col-span-12"
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 0.5 }}
-              whileHover={{ scale: 1.01 }}
-            >
-              <Project
-                title="Crypto Screener Application"
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency."
-                link="/"
-                type="Feature Project"
-                github="/"
-                img={project1}
+                img={gpt}
               />
             </motion.div>
             <motion.div
