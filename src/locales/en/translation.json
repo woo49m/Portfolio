@@ -1,0 +1,134 @@
+{
+  "Footer": {
+    "EN": "EN",
+    "ZH": "ZH",
+    "Home": "Home",
+    "About": "About",
+    "Project": "Project"
+  },
+  "Hire": "Hire",
+  "Index": {
+    "Resume": "Resume",
+    "Contact": "Contact",
+    "Head": "Self taught web developer with passion being better !",
+    "Content": "As a front end developer, I enjoy bringing the beautiful design to web applications. Explore my latest projects in React.js and web development. Furthurmore, I used to complete AI, XR, point cloud project which are also contained in my web portfolio."
+  },
+  "About": {
+    "Biography": "Biography",
+    "Bechelor": "Bechelor Degree",
+    "Master": " Master Degree",
+    "Graduated": "Graduated",
+    "Programming_Year": "Programming Year",
+    "projects_completed": "projects completed",
+    "web_applications": "web applications",
+    "Bechelor_Content": "Hi, My name is Ian. I am a lively and easy-going person, and actively participate in many club activities during my college. Due to my appeal and influence, I often serve as the general convener or main cadre that make me have a lot of experience in event planning and executing.",
+    "Master_Content": "In this two year, I have learned C#, Python, and written code for two years. Ultimately, I developed two software related projects and had experience in meeting project requirements with owners. My fast learning ability and logical thinking enable me to plan orderly and execute when even facing with non-professional related projects. I have In the face of many difficulties, I am not afraid of any challenges, and I am willing to break through myself. During the process, I found it very interesting and attractive to produce productive things through logical knowledge and programming. and it sparked my interest in information Engineering, which made me finally choose to dedicate to it.",
+    "Graduated_Content": "At present, I have been self-studying front end web pages for about five months. I am capable of front end languages, React frameworks, CRA, Vite, Next.JS, TailwindCSS and other development kits such as Rdeux, Router, etc. In the future, I will not only keep learning more basic theory, back end knowledge, and development tools, but also cultivate development experience and design programming in order to become an excellent web developer!"
+  },
+  "Skills": {
+    "title": "Skills"
+  },
+  "Experience": {
+    "title": "Learning & Project Experience",
+    "Detail_Front": {
+      "position": "Front End Developer",
+      "period": "After Graduated",
+      "time": "Jan 2023 - Present",
+      "content1": "Possess basic web development abilities in Javascript, HTML, and CSS",
+      "content2": "Use React framework and related kits to develop websites",
+      "content3": "Use CRA, Vite, Next.js as React development frameworks",
+      "content4": "Use Firebase as the backend database for API connection",
+      "content5": "Basic knowledge of Git",
+      "content6": "Accumulated so far 5 web related works"
+    },
+    "Detail_thesis": {
+      "position": "Thesis project development",
+      "company": " @NCKU",
+      "period": "Master Degree",
+      "time": "Jan 2022 - July 2022",
+      "Project_Detail": "Project Detail : ",
+      "Project_Title": "Title : ",
+      "Project_Purpose": "Purpose : ",
+      "Project_Skills": "Skills : ",
+      "Project_Demo": "Demo : ",
+      "content1": "Application of MR and AI to Develop an Opening Safety Inspection System",
+      "content2": "Through the use of MR equipment and the combination of AI, the problems of missing and redundant operation information of security personnel on construction sites in the past have been improved",
+      "content3": "Use C# language to program in Unity development environment and create user interface",
+      "content4": "Use Python to establish a Mask-RCNN AI model for image recognition and segmentation",
+      "content5": "Use Scikit-Learn package to assist in establishing algorithms",
+      "content6": "Use Firebase to store information"
+    },
+    "Detail_TSMC": {
+      "position": "TSMC project",
+      "company": " @NCKU & TSMC",
+      "period": "Master Degree",
+      "time": "May 2021 - Dec 2021",
+      "Project_Detail": "Project Detail : ",
+      "Project_Title": "Title : ",
+      "Project_Purpose": "Purpose : ",
+      "Project_Skills": "Skills : ",
+      "Project_Demo": "Demo : ",
+      "Others": "Others : ",
+      "content1": "Intelligent security detection system",
+      "content2": "Through the collection of point cloud of daily new construction progress, the project system will automatically doing safety inspection",
+      "content3": "Weekly project meetings with owner for progress reports and requirements adjustments",
+      "content4": "Use Python and scikit-learn to establishing Security Decision Algorithm and Guidelines",
+      "content5": "Use C# language to develop user interface in Unity ",
+      "content6": "Point cloud data processing capability"
+    },
+    "Detail_BIM": {
+      "position": "Building Infotmation Model project",
+      "company": " @NCKU",
+      "period": "Master Degree",
+      "time": "Nov 2020 - May 2022",
+      "Project_Detail": "Project Detail : ",
+      "Project_Title": "Title : ",
+      "Project_Purpose": "Purpose : ",
+      "Project_Skills": "Skills : ",
+      "content1": "Establish Mechanical, electrical, and plumbing (MEP) 3D element.",
+      "content2": "The completed MEP model will be combined with XR equipment to enhance the practical application value",
+      "content3": "Using Hololens 2 as MR device to apply in project",
+      "content4": "Use C# language to develop interaction between reality object and virtual object in Unity"
+    },
+    "Detail_learn": {
+      "position": "Learn from the past project knowledge of the laboratory",
+      "company": " @NCKU",
+      "period": "Master Degree",
+      "time": "sep 2020 - Nov 2020",
+      "content1": "Learn Python, C# basic language",
+      "content2": "Learn about the application of AI CNN predictive models",
+      "content3": "Learn about the concept of Blockchain",
+      "content4": "Learn Unity to develop XR applications"
+    }
+  },
+  "Project": {
+    "title": "Web Applications",
+    "visit": "visit Project",
+    "Project1": {
+      "title": "Ian's Portfolio",
+      "summary": "This project use Next.JS, React, Tailwind CSS, framer-motion to establish. Content of potfolio includes my web applications, resume and biology to make people quickly know me. It also made in RWD providing the best user experience to browse it.",
+      "type": "Portfolio Project"
+    },
+    "Project2": {
+      "title": "Netflix_clone",
+      "summary": "A netflix clone web use CRA, React, React-router-dom, React-Redux and Firebase. With the The Movie Database (TMDB) API, this app can show various kind of popular recent movies. It also have membership system by using firebase-auth API that make it more similar to Netflix App.",
+      "type": "Clone Project"
+    },
+    "Project3": {
+      "title": "Amazon_clone",
+      "summary": "An amazon clone web app use CRA, React, Tailwind CSS, React-router-dom, React-Redux, and swiper. This web application use simple self-made database and then utilize axios to get it, so that user can use search function to show items. It also provides shopping cart function to use redux to store item information, and calculates items in total price",
+      "type": "Clone Project"
+    },
+    "Project4": {
+      "title": "Realtime Weather App",
+      "summary": "A Feature Realtime Weather App use CRA, React, emotion-theming/styled. It use Central Weather Bureau API to fetch country weather in Taiwan, providing prople checking the weather in realtime.",
+      "type": "Feature Project"
+    },
+
+    "Project5": {
+      "title": "Chat-GPT theme Layout",
+      "summary": "This App using React, and CSS. This app is created according the Chat-GPT style, and built in RWD. It is a Layout demo to practice the CSS function.",
+      "type": "Layout Project"
+    }
+  }
+}

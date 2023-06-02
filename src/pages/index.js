@@ -7,8 +7,10 @@ import Link from "next/link";
 import { LinkArrow } from "@/components/Icons";
 import HireMe from "@/components/HireMe";
 import TransitionEffect from "@/components/TransitionEffect";
+import { useTranslation } from "react-i18next";
 
 export default function Home() {
+  const { t } = useTranslation();
   return (
     <>
       <Head>
@@ -32,37 +34,33 @@ export default function Home() {
             </div>
             <div className="w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center">
               <AnimatedText
-                text={"Self taught web developer with passion being better !"}
+                text={t("Index.Head")}
                 className="!text-6xl !text-left 
                  xl:!text-5xl lg:!text-center lg:text-6xl md:!text-5xl sm:!text-3xl
                 "
               />
               <p className="my-4 text-base font-medium md:text-sm sm:text-xs text-dark dark:text-light/80">
-                As a front end developer, I enjoy bringing the beautiful design
-                to web applications. Explore my latest projects in React.js and
-                web development. Furthurmore, I used to complete AI, XR, point
-                cloud project which are also contained in my web portfolio.
+                {t("Index.Content")}
               </p>
 
               <div className="flex items-center self-start mt-2 lg:self-center ">
                 <Link
-                  className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark
+                  className="flex flex-row items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark
                    border-2 border-solid border-transparent hover:border-dark dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light
-                   md:p-2 sm:px-4 md:text-base
+                   md:p-2 sm:px-4 md:text-base 
                    "
                   href={"/resume.pdf"}
                   target="_blank"
                   download={true}
                 >
-                  Resume
-                  <LinkArrow className={"w-6 ml-1"} />
+                  <span className="w-50 ">{t("Index.Resume")}</span>
                 </Link>
                 <Link
                   href="mailto:woo49m@gmail.com"
                   target="_blank"
-                  className="ml-4 text-lg font-medium capitalize text-dark dark:text-light underline md:text-base"
+                  className="ml-4 text-lg font-medium capitalize text-dark dark:text-light md:text-base"
                 >
-                  Contact
+                  {t("Index.Contact")}
                 </Link>
               </div>
             </div>

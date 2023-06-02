@@ -10,8 +10,10 @@ import {
   Firebase,
   NextJs,
 } from "./Icons";
+import { useTranslation } from "react-i18next";
 
 const Skills = () => {
+  const { t } = useTranslation();
   return (
     <div className="m-16 lg:m-8 md:m-4 sm:m-2 xs:m-1">
       <motion.h2
@@ -21,7 +23,7 @@ const Skills = () => {
         className=" font-bold text-8xl mt-64 mb-32 w-full text-center  text-dark dark:text-light
         lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8 md:mt-32 uppercase "
       >
-        Skills
+        {t("Skills.title")}
       </motion.h2>
 
       <div className="w-full h-auto flex items-center justify-center mt-10 flex-wrap xl:justify-center  ">

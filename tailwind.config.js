@@ -1,4 +1,6 @@
-/** @type {import('tailwindcss').Config} */
+/**
+ * @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: [
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
@@ -21,6 +23,7 @@ module.exports = {
       fontFamily: {
         sans: ["var(--font-montserrat)"],
         mono: ["var(--font-roboto-mono)"],
+        Tradition_Chinese: ["Noto Sans TC", "sans-serif"],
       },
       colors: {
         dark: "#1b1b1b",
@@ -31,7 +34,7 @@ module.exports = {
         gradient2: "#f49867",
       },
       animation: {
-        "spin-slow": "spin 15s linear infinite",
+        "spin-slow": "spin 30s linear infinite",
       },
       backgroundImage: {
         circularLight:

@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import { motion, useScroll } from "framer-motion";
 import LiIcons from "./LiIcons";
+import { useTranslation } from "react-i18next";
 
 const Details = ({
   position,
@@ -46,6 +47,7 @@ const Details = ({
 };
 
 const Experience = () => {
+  const { t } = useTranslation();
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -61,7 +63,7 @@ const Experience = () => {
         className=" font-bold text-8xl mb-40 mt-32 w-full text-center text-dark dark:text-light
         lg:!text-7xl sm:!text-6xl xs:!text-4xl uppercase lg:mb-32 sm:mb-20 "
       >
-        Learning & Project Experience
+        {t("Experience.title")}
       </motion.h2>
       <div ref={ref} className="w-[80%] mx-auto relative lg:w-[100%] md:w-full">
         <motion.div
@@ -72,31 +74,18 @@ const Experience = () => {
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4">
           <Details
-            position={"Front End Developer"}
+            position={t("Experience.Detail_Front.position")}
             company={""}
-            time={"After Graduated"}
-            address={"Jan 2023 - Present"}
+            time={t("Experience.Detail_Front.period")}
+            address={t("Experience.Detail_Front.time")}
             work={
               <ul className=" list-disc pl-5">
-                <li>
-                  Possess basic web development abilities in <b>Javascript</b>
-                  ,&nbsp; <b>HTML</b>, and <b>CSS</b>
-                </li>
-                <li>
-                  Use <b>React</b> framework and related kits to develop
-                  websites
-                </li>
-                <li>
-                  Use <b>CRA</b>, <b>Vite</b>, <b>Next.js</b> as React
-                  development frameworks
-                </li>
-                <li>
-                  Use <b>Firebase</b> as the backend database for API connection
-                </li>
-                <li>
-                  Basic knowledge of <b>Git</b>
-                </li>
-                <li>Accumulated so far 5 web related works</li>
+                <li>{t("Experience.Detail_Front.content1")}</li>
+                <li>{t("Experience.Detail_Front.content2")} </li>
+                <li>{t("Experience.Detail_Front.content3")}</li>
+                <li>{t("Experience.Detail_Front.content4")}</li>
+                <li>{t("Experience.Detail_Front.content5")}</li>
+                <li>{t("Experience.Detail_Front.content6")}</li>
               </ul>
             }
           />
@@ -120,8 +109,7 @@ const Experience = () => {
               </ul>
             }
           /> */}
-
-          <Details
+          {/* <Details
             position={"Acting a short Film - It's raining "}
             company={"@Beijing"}
             time={"Graduated"}
@@ -132,52 +120,42 @@ const Experience = () => {
                 <li>Finalized for various film festivals and won awards</li>
               </ul>
             }
-          />
+          />*/}
+
           <Details
             id="thesis"
-            position={"Thesis project development"}
-            company={" @NCKU"}
-            time={"Master Degree"}
-            address={"Jan 2022 - July 2022"}
+            position={t("Experience.Detail_thesis.position")}
+            company={t("Experience.Detail_thesis.company")}
+            time={t("Experience.Detail_thesis.period")}
+            address={t("Experience.Detail_thesis.time")}
             work={
               <ul>
                 <li>
-                  <b>Project Detail : </b>
+                  <b>{t("Experience.Detail_thesis.Project_Detail")}</b>
                   <ul className=" list-square pl-5">
                     <li>
-                      <b>Title : </b> Application of MR and AI to Develop an
-                      Opening Safety Inspection System
+                      <b>{t("Experience.Detail_thesis.Project_Title")}</b>{" "}
+                      {t("Experience.Detail_thesis.content1")}
                     </li>
                     <li>
-                      <b>Purpose : </b> Through the use of MR equipment and the
-                      combination of AI, the problems of missing and redundant
-                      operation information of security personnel on
-                      construction sites in the past have been improved
+                      <b>{t("Experience.Detail_thesis.Project_Purpose")}</b>{" "}
+                      {t("Experience.Detail_thesis.content2")}
                     </li>
                   </ul>
                 </li>
 
                 <li className="mt-2">
-                  <b>Skills : </b>
+                  <b>{t("Experience.Detail_thesis.Project_Skills")}</b>
                   <ul className=" list-outsude list-square  pl-5">
-                    <li>
-                      Use C# language to program in Unity development
-                      environment and create user interface
-                    </li>
-                    <li>
-                      Use Python to establish a Mask-RCNN AI model for image
-                      recognition and segmentation
-                    </li>
-                    <li>
-                      Use Scikit-Learn package to assist in establishing
-                      algorithms
-                    </li>
-                    <li>Use Firebase to store information</li>
+                    <li>{t("Experience.Detail_thesis.content3")}</li>
+                    <li>{t("Experience.Detail_thesis.content4")}</li>
+                    <li>{t("Experience.Detail_thesis.content5")}</li>
+                    <li>{t("Experience.Detail_thesis.content6")}</li>
                   </ul>
                 </li>
 
                 <li className="mt-2">
-                  <b>Demo : </b>
+                  <b>{t("Experience.Detail_thesis.Project_Demo")}</b>
                   <div className="mt-2 w-full, h-[0px] relative pb-[50%]">
                     <iframe
                       src="https://streamable.com/e/w05qx1?loop=0"
@@ -194,96 +172,88 @@ const Experience = () => {
           />
           <Details
             id="TSMC"
-            position={"TSMC project"}
-            company={" @NCKU & TSMC"}
-            time={"Master Degree"}
-            address={"May 2021 - Dec 2021"}
+            position={t("Experience.Detail_TSMC.position")}
+            company={t("Experience.Detail_TSMC.company")}
+            time={t("Experience.Detail_TSMC.period")}
+            address={t("Experience.Detail_TSMC.time")}
             work={
               <ul>
                 <li>
-                  <b>Project Detail : </b>
+                  <b>{t("Experience.Detail_TSMC.Project_Detail")}</b>
                   <ul className=" list-square pl-5">
                     <li>
-                      <b>Title : </b> Intelligent security detection system
+                      <b>{t("Experience.Detail_TSMC.Project_Title")}</b>{" "}
+                      {t("Experience.Detail_TSMC.content1")}
                     </li>
                     <li>
-                      <b>Purpose : </b> Through the collection of point cloud of
-                      daily new construction progress, the project system will
-                      automatically doing safety inspection
+                      <b>{t("Experience.Detail_TSMC.Project_Purpose")}</b>{" "}
+                      {t("Experience.Detail_TSMC.content2")}
                     </li>
                     <li>
-                      <b>Others : </b> Weekly project meetings with owner for
-                      progress reports and requirements adjustments
+                      <b>{t("Experience.Detail_TSMC.Others")}</b>{" "}
+                      {t("Experience.Detail_TSMC.content3")}
                     </li>
                   </ul>
                 </li>
 
                 <li className="mt-2">
-                  <b>Skills : </b>
+                  <b>{t("Experience.Detail_TSMC.Project_Skills")}</b>
                   <ul className=" list-outsude list-square  pl-5">
-                    <li>
-                      Use Python and scikit-learn to establishing Security
-                      Decision Algorithm and Guidelines
-                    </li>
-                    <li>Use C# language to develop user interface in Unity </li>
+                    <li>{t("Experience.Detail_TSMC.content4")}</li>
+                    <li>{t("Experience.Detail_TSMC.content5")}</li>
 
-                    <li>Point cloud data processing capability</li>
+                    <li>{t("Experience.Detail_TSMC.content6")}</li>
                   </ul>
                 </li>
 
                 <li className="mt-2">
-                  <b>Demo : </b>
+                  <b>{t("Experience.Detail_TSMC.Project_Demo")}</b>
                 </li>
               </ul>
             }
           />
           <Details
-            position={"Building Infotmation Model project"}
-            company={" @NCKU"}
-            time={"Master Degree"}
-            address={"Nov 2020 - May 2022"}
+            position={t("Experience.Detail_BIM.position")}
+            company={t("Experience.Detail_BIM.company")}
+            time={t("Experience.Detail_BIM.period")}
+            address={t("Experience.Detail_BIM.time")}
             work={
               <ul>
                 <li>
-                  <b>Project Detail : </b>
+                  <b>{t("Experience.Detail_BIM.Project_Detail")}</b>
                   <ul className=" list-square pl-5">
                     <li>
-                      <b>Title : </b> Establish Mechanical, electrical, and
-                      plumbing (MEP) 3D element.
+                      <b>{t("Experience.Detail_BIM.Project_Title")}</b>{" "}
+                      {t("Experience.Detail_BIM.content1")}
                     </li>
                     <li>
-                      <b>Purpose : </b> The completed MEP model will be combined
-                      with XR equipment to enhance the practical application
-                      value
+                      <b>{t("Experience.Detail_BIM.Project_Purpose")}</b>
+                      {t("Experience.Detail_BIM.content2")}
                     </li>
                   </ul>
                 </li>
 
                 <li className="mt-2">
-                  <b>Skills : </b>
+                  <b>{t("Experience.Detail_BIM.Project_Skills")}</b>
                   <ul className=" list-outsude list-square  pl-5">
-                    <li>Using Hololens 2 as MR device to apply in project</li>
-                    <li>
-                      Use C# language to develop interaction between reality
-                      object and virtual object in Unity
-                    </li>
-                    <li>Use firebase to store information</li>
+                    <li>{t("Experience.Detail_BIM.content3")}</li>
+                    <li>{t("Experience.Detail_BIM.content4")}</li>
                   </ul>
                 </li>
               </ul>
             }
           />
           <Details
-            position={"Learn from the past project knowledge of the laboratory"}
-            company={" @NCKU"}
-            time={"Master Degree"}
-            address={"sep 2020 - Nov 2020"}
+            position={t("Experience.Detail_learn.position")}
+            company={t("Experience.Detail_learn.company")}
+            time={t("Experience.Detail_learn.period")}
+            address={t("Experience.Detail_learn.time")}
             work={
               <ul className=" list-disc pl-5">
-                <li>Learn Python, C# basic language</li>
-                <li>Learn about the application of AI CNN predictive models</li>
-                <li>Learn Blockchain Concepts</li>
-                <li>Learn Unity to develop XR applications</li>
+                <li>{t("Experience.Detail_learn.content1")}</li>
+                <li>{t("Experience.Detail_learn.content2")}</li>
+                <li>{t("Experience.Detail_learn.content3")}</li>
+                <li>{t("Experience.Detail_learn.content4")}</li>
               </ul>
             }
           />

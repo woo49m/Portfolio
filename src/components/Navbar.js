@@ -8,11 +8,13 @@ import {
   GithubIcon2,
   Insta,
   Insta2,
+  LanguageIcon,
   MoonIcon,
   SunIcon,
 } from "./Icons";
 import { motion } from "framer-motion";
 import useThemeSwitcher from "./Hooks/useThemeSwitcher";
+import { useTranslation } from "react-i18next";
 
 const CustomLink = ({ href, title, className = "" }) => {
   const router = useRouter();
@@ -62,8 +64,15 @@ const Navbar = () => {
   const [mode, setMode] = useThemeSwitcher();
   const [isOpen, setIsOpen] = useState(false);
 
+  const [langisOpen, setlangisOpen] = useState(false);
+  const { t, i18n } = useTranslation();
+
   const handleClick = () => {
     setIsOpen(!isOpen);
+  };
+
+  const changeLng = (lng) => {
+    i18n.changeLanguage(lng);
   };
 
   return (
@@ -92,17 +101,17 @@ const Navbar = () => {
         <nav>
           <CustomLink
             href="/"
-            title={"Home"}
+            title={t("Footer.Home")}
             className="text-xl font-semibold mr-4"
           />
           <CustomLink
             href="/about"
-            title={"About"}
+            title={t("Footer.About")}
             className="text-xl font-semibold mx-4"
           />
           <CustomLink
             href="/projects"
-            title={"Projects"}
+            title={t("Footer.Project")}
             className="text-xl font-semibold mx-4"
           />
         </nav>
@@ -148,7 +157,64 @@ const Navbar = () => {
               <MoonIcon className={"fill-dark w-12 h-12"} />
             )}
           </button>
+          <div className="flex flex-col font-bold ">
+            <div className="flex flex-row justify-center items-center ">
+              <div
+                className=" relative bg-dark rounded-full mt-[0px] ml-6 mr-1 dark:bg-light  dark:hover:bg-light/75  hover:bg-dark/50 transition-all ease-in-out duration-100"
+                onClick={() => setlangisOpen(!langisOpen)}
+              >
+                <LanguageIcon className=" cursor-pointer dark:fill-dark fill-light  w-[44px] translate-y-[4px] h-auto "></LanguageIcon>
+                <div
+                  className={`ease-in-out transition-all duration-500  ${
+                    langisOpen ? "flex flex-col" : "hidden"
+                  } items-center justify-center absolute translate-y-2 left-[50%] -translate-x-[50%] `}
+                >
+                  <button
+                    className="w-10 hover:underline hover:underline-offset-2 transition-all ease-in duration-100"
+                    onClick={() => changeLng("en")}
+                  >
+                    {t("Footer.EN")}
+                  </button>
+                  <button
+                    className="w-10 hover:underline hover:underline-offset-2 transition-all ease-in duration-100"
+                    onClick={() => changeLng("zh")}
+                  >
+                    {t("Footer.ZH")}
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </nav>
+      </div>
+
+      <div className="absolute hidden md:right-4 right-12 lg:flex lg:flex-col font-bold ">
+        <div className="flex flex-row justify-center items-center ">
+          <div
+            className=" relative bg-dark rounded-full mt-[0px] ml-6 mr-1 dark:bg-light  dark:hover:bg-light/75  hover:bg-dark/50 transition-all ease-in-out duration-100"
+            onClick={() => setlangisOpen(!langisOpen)}
+          >
+            <LanguageIcon className=" cursor-pointer dark:fill-dark fill-light  w-[44px] translate-y-[4px] h-auto "></LanguageIcon>
+            <div
+              className={`ease-in-out transition-all duration-500  ${
+                langisOpen ? "flex flex-col" : "hidden"
+              } items-center justify-center absolute translate-y-2 left-[50%] -translate-x-[50%] `}
+            >
+              <button
+                className="w-10 hover:underline hover:underline-offset-2 transition-all ease-in duration-100"
+                onClick={() => changeLng("en")}
+              >
+                {t("Footer.EN")}
+              </button>
+              <button
+                className="w-10 hover:underline hover:underline-offset-2 transition-all ease-in duration-100"
+                onClick={() => changeLng("zh")}
+              >
+                {t("Footer.ZH")}
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
 
       {isOpen ? (
@@ -157,25 +223,25 @@ const Navbar = () => {
           animate={{ scale: 1, opacity: 1 }}
           className="min-w-[70vw] flex flex-col justify-between items-center z-30
        bg-dark/90 dark:bg-light/70 rounded-lg backdrop-blur-md pt-32 pb-16 
-       fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 sm:pt-24 sm:pb-12
+       fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 sm:pt-28 sm:pb-12
         "
         >
           <nav className="flex items-center flex-col justify-center">
             <CustomMobileLink
               href="/"
-              title={"Home"}
+              title={t("Footer.Home")}
               className="text-xl font-semibold"
               toggle={handleClick}
             />
             <CustomMobileLink
               href="/about"
-              title={"About"}
+              title={t("Footer.About")}
               className="text-xl font-semibold"
               toggle={handleClick}
             />
             <CustomMobileLink
               href="/projects"
-              title={"Projects"}
+              title={t("Footer.Project")}
               className="text-xl font-semibold"
               toggle={handleClick}
             />
@@ -213,11 +279,11 @@ const Navbar = () => {
           <button
             onClick={() => setMode(mode === "light" ? "dark" : "light")}
             className={` absolute top-8 mt-6 flex items-center justify-center rounded-full p-1 w-11 sm:w-9 sm:top-5 ${
-              mode === "dark" ? "bg-dark text-light" : "bg-light text-dark"
+              mode === "dark" ? "bg-dark text-light " : "bg-light text-dark "
             }`}
           >
             {mode === "dark" ? (
-              <SunIcon className={"fill-dark w-12 h-12 "} />
+              <SunIcon className={" fill-dark w-12 h-12 "} />
             ) : (
               <MoonIcon className={"fill-dark w-12 h-12"} />
             )}
