@@ -180,7 +180,7 @@ const Experience = () => {
                   <b>Demo : </b>
                   <div className="mt-2 w-full, h-[0px] relative pb-[50%]">
                     <iframe
-                      src="https://streamable.com/e/w05qx1?loop=0&muted=1"
+                      src="https://streamable.com/e/w05qx1?loop=0"
                       frameborder="0"
                       width="100%"
                       height="100%"
