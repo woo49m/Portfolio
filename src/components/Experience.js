@@ -2,10 +2,19 @@ import React, { useRef } from "react";
 import { motion, useScroll } from "framer-motion";
 import LiIcons from "./LiIcons";
 
-const Details = ({ position, company, companyLink, time, address, work }) => {
+const Details = ({
+  position,
+  company,
+  companyLink,
+  time,
+  address,
+  id,
+  work,
+}) => {
   const ref = useRef(null);
   return (
     <li
+      id={id}
       ref={ref}
       className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-start justify-between md:w-[80%]"
     >
@@ -91,7 +100,7 @@ const Experience = () => {
               </ul>
             }
           />
-          <Details
+          {/* <Details
             position={"Start up a business"}
             company={" @TIDera"}
             time={"After Graduated"}
@@ -110,7 +119,8 @@ const Experience = () => {
                 </li>
               </ul>
             }
-          />
+          /> */}
+
           <Details
             position={"Acting a short Film - It's raining "}
             company={"@Beijing"}
@@ -124,6 +134,7 @@ const Experience = () => {
             }
           />
           <Details
+            id="thesis"
             position={"Thesis project development"}
             company={" @NCKU"}
             time={"Master Degree"}
@@ -139,10 +150,9 @@ const Experience = () => {
                     </li>
                     <li>
                       <b>Purpose : </b> Through the use of MR equipment and the
-                      combination of artificial intelligence, the problems of
-                      missing and redundant operation information of security
-                      personnel on construction sites in the past have been
-                      improved
+                      combination of AI, the problems of missing and redundant
+                      operation information of security personnel on
+                      construction sites in the past have been improved
                     </li>
                   </ul>
                 </li>
@@ -155,20 +165,35 @@ const Experience = () => {
                       environment and create user interface
                     </li>
                     <li>
-                      Establish a Mask-RCNN artificial intelligence model using
-                      Python language for image recognition and segmentation
+                      Use Python to establish a Mask-RCNN AI model for image
+                      recognition and segmentation
                     </li>
                     <li>
-                      Use Python language and Scikit-Learn package to assist in
-                      the development of security judgment algorithms
+                      Use Scikit-Learn package to assist in establishing
+                      algorithms
                     </li>
-                    <li>Use Firebase Database to store information</li>
+                    <li>Use Firebase to store information</li>
                   </ul>
+                </li>
+
+                <li className="mt-2">
+                  <b>Demo : </b>
+                  <div className="mt-2 w-full, h-[0px] relative pb-[50%]">
+                    <iframe
+                      src="https://streamable.com/e/w05qx1?loop=0&muted=1"
+                      frameborder="0"
+                      width="100%"
+                      height="100%"
+                      allowfullscreen="true"
+                      className=" w-full h-full absolute left-0 top-0 overflow-hidden"
+                    ></iframe>
+                  </div>
                 </li>
               </ul>
             }
           />
           <Details
+            id="TSMC"
             position={"TSMC project"}
             company={" @NCKU & TSMC"}
             time={"Master Degree"}
@@ -197,16 +222,17 @@ const Experience = () => {
                   <b>Skills : </b>
                   <ul className=" list-outsude list-square  pl-5">
                     <li>
-                      Establishing Security Decision Algorithms and Guidelines
-                      Using Python
+                      Use Python and scikit-learn to establishing Security
+                      Decision Algorithm and Guidelines
                     </li>
                     <li>Use C# language to develop user interface in Unity </li>
-                    <li>
-                      Use Python language and Scikit-Learn package to assist in
-                      the development of security judgment algorithms
-                    </li>
+
                     <li>Point cloud data processing capability</li>
                   </ul>
+                </li>
+
+                <li className="mt-2">
+                  <b>Demo : </b>
                 </li>
               </ul>
             }
@@ -241,7 +267,7 @@ const Experience = () => {
                       Use C# language to develop interaction between reality
                       object and virtual object in Unity
                     </li>
-                    <li>Use firebase database to store information</li>
+                    <li>Use firebase to store information</li>
                   </ul>
                 </li>
               </ul>

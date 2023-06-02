@@ -50,7 +50,7 @@ export default function Home() {
                    border-2 border-solid border-transparent hover:border-dark dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light
                    md:p-2 sm:px-4 md:text-base
                    "
-                  href={"/dummy.pdf"}
+                  href={"/resume.pdf"}
                   target="_blank"
                   download={true}
                 >

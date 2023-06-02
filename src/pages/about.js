@@ -65,30 +65,28 @@ const about = () => {
                   Bechelor Degree
                 </h2>
                 <p className="text-xl lg:text-lg md:text-base sm:text-sm font-medium text-justify ">
-                  Hi, My name is Ian. I am lively and easy-going, actively
-                  participate in group activities, and have appeal and influence
-                  in the group. Therefore, I often serve as the general convener
-                  or main cadre that make me have a lot of experience in event
-                  planning and executing.
+                  Hi, My name is Ian. I am a lively and easy-going person, and
+                  actively participate in many club activities during my
+                  college. Due to my appeal and influence, I often serve as the
+                  general convener or main cadre that make me have a lot of
+                  experience in event planning and executing.
                 </p>
                 <h2 className="mb-1 mt-8 text-2xl lg:text-xl font-bold  text-dark/75 dark:text-light/90">
                   Master Degree
                 </h2>
                 <p className="text-xl lg:text-lg md:text-base sm:text-sm font-medium text-justify ">
-                  The laboratory has introduced artificial intelligence,
-                  blockchain, point cloud, XR (AR, MR, VR) and other information
-                  technologies for many years to improve management efficiency.
-                  Due to the good benefits brought by emerging technologies, we
-                  often have the opportunity to conduct cooperation projects
-                  with external companies. During the period of master degree, I
-                  have completed three projects and one thesis. Projects contain
-                  &quot;Establish BIM Model&quot;, &quot;Intelligent security
-                  detection system&quot; and &quot;Application of MR and AI to
-                  Develop an Opening Safety Inspection System&quot;. In the face
-                  of many difficulties, I am not afraid of any challenges, and I
-                  am willing to break through myself. In the process, I aroused
-                  my interest in the information Engineering, which made me
-                  finally choose to go for it.
+                  In this two year, I have learned C#, Python, and written code
+                  for two years. Ultimately, I developed two software related
+                  projects and had experience in meeting project requirements
+                  with owners. My fast learning ability and logical thinking
+                  enable me to plan orderly and execute when even facing with
+                  non-professional related projects. I have In the face of many
+                  difficulties, I am not afraid of any challenges, and I am
+                  willing to break through myself. During the process, I found
+                  it very interesting and attractive to produce productive
+                  things through logical knowledge and programming. and it
+                  sparked my interest in information Engineering, which made me
+                  finally choose to dedicate to it.
                 </p>
 
                 <h2 className="mb-1  mt-8 text-2xl lg:text-xl font-bold  text-dark/75 dark:text-light/90">
@@ -96,10 +94,13 @@ const about = () => {
                 </h2>
                 <p className="text-xl lg:text-lg md:text-base sm:text-sm font-medium  text-justify ">
                   At present, I have been self-studying front end web pages for
-                  about five months. I have basic front end languages, React
-                  frameworks, and other package applications. This is my
-                  Portfolio web page, which includes web applications and past
-                  research project.
+                  about five months. I am capable of front end languages, React
+                  frameworks, CRA, Vite, Next.JS, TailwindCSS and other
+                  development kits such as Rdeux, Router, etc. In the future, I
+                  will not only keep learning more basic theory, back end
+                  knowledge, and development tools, but also cultivate
+                  development experience and design programming in order to
+                  become an excellent web developer!
                 </p>
               </div>
             </div>
@@ -114,12 +115,12 @@ const about = () => {
                   <AnimatedNumbers value={2} />+
                 </span>
                 <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm-text-base xs:text-sm">
-                  Programing Year
+                  Programming Year
                 </h2>
               </div>
               <div className="flex mx-2 flex-col justify-center items-end xl:items-center">
                 <span className=" inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
-                  <AnimatedNumbers value={3} />+
+                  <AnimatedNumbers value={2} />+
                 </span>
                 <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm-text-base xs:text-sm">
                   projects completed
