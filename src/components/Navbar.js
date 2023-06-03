@@ -15,6 +15,7 @@ import {
 import { motion } from "framer-motion";
 import useThemeSwitcher from "./Hooks/useThemeSwitcher";
 import { useTranslation } from "react-i18next";
+import HireMe from "./HireMe";
 
 const CustomLink = ({ href, title, className = "" }) => {
   const router = useRouter();
@@ -76,7 +77,10 @@ const Navbar = () => {
   };
 
   return (
-    <header className=" w-full px-32 py-8 lg:py-16 md:py-8 md:px-8 font-medium flex items-center justify-between dark:text-light relative z-10 lg:px-16 md:px12 sm:px-8">
+    <header
+      className=" w-full px-32 py-8 lg:py-16 md:py-[42px] md:px-8 font-medium flex 
+    items-center justify-between dark:text-light relative z-10 lg:px-16 md:px12 sm:px-8"
+    >
       <button
         className="flex-col justify-center items-center hidden lg:flex"
         onClick={() => handleClick()}
@@ -160,27 +164,32 @@ const Navbar = () => {
           <div className="flex flex-col font-bold ">
             <div className="flex flex-row justify-center items-center ">
               <div
-                className=" relative bg-dark rounded-full mt-[0px] ml-6 mr-1 dark:bg-light  dark:hover:bg-light/75  hover:bg-dark/50 transition-all ease-in-out duration-100"
+                className=" relative bg-gray-500 rounded-full mt-[0px] ml-6 mr-1 
+            md:bg-gray-500 md:hover:bg-gray-400 p-[3px]
+            dark:bg-gradient-to-tl from-gradient1 to-gradient2  dark:md:hover:bg-gray-400 dark:bg-light 
+            dark:hover:bg-light/75  hover:bg-dark/50 transition-all ease-in-out duration-100"
                 onClick={() => setlangisOpen(!langisOpen)}
               >
-                <LanguageIcon className=" cursor-pointer dark:fill-dark fill-light  w-[44px] translate-y-[4px] h-auto "></LanguageIcon>
-                <div
-                  className={`ease-in-out transition-all duration-500  ${
-                    langisOpen ? "flex flex-col" : "hidden"
-                  } items-center justify-center absolute translate-y-2 left-[50%] -translate-x-[50%] `}
-                >
-                  <button
-                    className="w-10 hover:underline hover:underline-offset-2 transition-all ease-in duration-100"
-                    onClick={() => changeLng("en")}
+                <div className=" w-full bg-dark rounded-full">
+                  <LanguageIcon className=" cursor-pointer fill-light md:w-[38px]    w-[44px] translate-y-[4px] h-auto "></LanguageIcon>
+                  <div
+                    className={`ease-in-out transition-all duration-500  ${
+                      langisOpen ? "flex flex-col" : "hidden"
+                    } items-center justify-center absolute translate-y-2 left-[50%] -translate-x-[50%] `}
                   >
-                    {t("Footer.EN")}
-                  </button>
-                  <button
-                    className="w-10 hover:underline hover:underline-offset-2 transition-all ease-in duration-100"
-                    onClick={() => changeLng("zh")}
-                  >
-                    {t("Footer.ZH")}
-                  </button>
+                    <button
+                      className="w-10 hover:underline hover:underline-offset-2 transition-all ease-in duration-100"
+                      onClick={() => changeLng("en")}
+                    >
+                      {t("Footer.EN")}
+                    </button>
+                    <button
+                      className="w-10 hover:underline hover:underline-offset-2 transition-all ease-in duration-100"
+                      onClick={() => changeLng("zh")}
+                    >
+                      {t("Footer.ZH")}
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -191,27 +200,32 @@ const Navbar = () => {
       <div className="absolute hidden md:right-4 right-12 lg:flex lg:flex-col font-bold ">
         <div className="flex flex-row justify-center items-center ">
           <div
-            className=" relative bg-dark rounded-full mt-[0px] ml-6 mr-1 dark:bg-light  dark:hover:bg-light/75  hover:bg-dark/50 transition-all ease-in-out duration-100"
+            className=" relative bg-gray-500 rounded-full mt-[0px] ml-6 mr-1 
+            md:bg-gray-500 md:hover:bg-gray-400 p-[3px]
+            dark:bg-gradient-to-tl from-gradient1 to-gradient2  dark:md:hover:bg-gray-400 dark:bg-light 
+            dark:hover:bg-light/75  hover:bg-dark/50 transition-all ease-in-out duration-100"
             onClick={() => setlangisOpen(!langisOpen)}
           >
-            <LanguageIcon className=" cursor-pointer dark:fill-dark fill-light  w-[44px] translate-y-[4px] h-auto "></LanguageIcon>
-            <div
-              className={`ease-in-out transition-all duration-500  ${
-                langisOpen ? "flex flex-col" : "hidden"
-              } items-center justify-center absolute translate-y-2 left-[50%] -translate-x-[50%] `}
-            >
-              <button
-                className="w-10 hover:underline hover:underline-offset-2 transition-all ease-in duration-100"
-                onClick={() => changeLng("en")}
+            <div className=" w-full bg-dark rounded-full">
+              <LanguageIcon className=" cursor-pointer fill-light md:w-[38px]    w-[44px] translate-y-[4px] h-auto "></LanguageIcon>
+              <div
+                className={`ease-in-out transition-all duration-500  ${
+                  langisOpen ? "flex flex-col" : "hidden"
+                } items-center justify-center absolute translate-y-2 left-[50%] -translate-x-[50%] `}
               >
-                {t("Footer.EN")}
-              </button>
-              <button
-                className="w-10 hover:underline hover:underline-offset-2 transition-all ease-in duration-100"
-                onClick={() => changeLng("zh")}
-              >
-                {t("Footer.ZH")}
-              </button>
+                <button
+                  className="w-10 hover:underline hover:underline-offset-2 transition-all ease-in duration-100"
+                  onClick={() => changeLng("en")}
+                >
+                  {t("Footer.EN")}
+                </button>
+                <button
+                  className="w-10 hover:underline hover:underline-offset-2 transition-all ease-in duration-100"
+                  onClick={() => changeLng("zh")}
+                >
+                  {t("Footer.ZH")}
+                </button>
+              </div>
             </div>
           </div>
         </div>
