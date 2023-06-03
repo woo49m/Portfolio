@@ -135,7 +135,7 @@ const Project = ({ title, type, img, link, github }) => {
     </article>
   );
 };
-const projects = () => {
+const Projects = () => {
   const { t } = useTranslation();
 
   return (
@@ -240,4 +240,4 @@ const projects = () => {
   );
 };
 
-export default projects;
+export default Projects;
