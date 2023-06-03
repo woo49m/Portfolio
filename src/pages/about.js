@@ -52,6 +52,7 @@ const About = () => {
 
       <main className="flex w-full flex-col items-center justify-center dark:text-light">
         <Layout className="pt-16">
+          <HireMe />
           <AnimatedText
             text={t("About.Biography")}
             className="mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8 "

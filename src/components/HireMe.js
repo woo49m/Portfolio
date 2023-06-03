@@ -14,9 +14,9 @@ const HireMe = () => {
         <Link
           href={"mailto:i861128@gmail.com"}
           className=" flex items-center justify-center absolute left-1/2 top-1/2
-           -translate-x-1/2 -translate-y-1/2 bg-light text-dark shadow-md border-solid xl:text-lg md:text-base
+           -translate-x-1/2 -translate-y-1/2 bg-transparent text-dark shadow-md border-solid xl:text-lg md:text-base
             border-dark w-16 h-16 rounded-full  hover:bg-dark hover:text-light 
-            dark:bg-dark dark:text-light hover:dark:bg-gradient-to-tl from-gradient1 to-gradient2 hover:dark:text-dark hover:dark:border-light
+            dark:bg-transparent dark:text-light hover:dark:bg-gradient-to-tl from-gradient1 to-gradient2 hover:dark:text-dark hover:dark:border-light
              md:w-8 md:h-8 md:text-[2px] xl:w-14 xl:h-14  font-bold transition-all duration-500 ease-linear
             "
         >
