@@ -21,7 +21,8 @@ const useThemeSwitcher = () => {
           document.documentElement.classList.remove("dark");
         }
       } else {
-        let check = mediaQuery.matches ? "dark" : "light";
+        /*let check = mediaQuery.matches ? "dark" : "light";*/
+        let check = "dark";
         setMode(check);
         if (check === "dark") {
           document.documentElement.classList.add("dark");
