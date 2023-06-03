@@ -14,13 +14,15 @@ const HireMe = () => {
         <Link
           href={"mailto:i861128@gmail.com"}
           className=" flex items-center justify-center absolute left-1/2 top-1/2
-           -translate-x-1/2 -translate-y-1/2 bg-dark text-light shadow-md border-solid text-base
-            border-dark w-20 h-20 rounded-full  hover:bg-light hover:text-dark
-            dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light
-             md:w-8 md:h-8 md:text-[2px] xl:w-14 xl:h-14 font-bold
+           -translate-x-1/2 -translate-y-1/2 bg-light text-dark shadow-md border-solid xl:text-lg md:text-base
+            border-dark w-16 h-16 rounded-full  hover:bg-dark hover:text-light 
+            dark:bg-dark dark:text-light hover:dark:bg-gradient-to-tl from-gradient1 to-gradient2 hover:dark:text-dark hover:dark:border-light
+             md:w-8 md:h-8 md:text-[2px] xl:w-14 xl:h-14  font-bold transition-all duration-500 ease-linear
             "
         >
-          {"W"}
+          <span className="xl: text-2xl lg:text-lg md:text-base sm:text-sm font-semibold">
+            W
+          </span>
         </Link>
       </div>
     </div>
