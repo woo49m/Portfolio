@@ -11,6 +11,7 @@ import {
   LanguageIcon,
   MoonIcon,
   SunIcon,
+  Mail,
 } from "./Icons";
 import { motion } from "framer-motion";
 import useThemeSwitcher from "./Hooks/useThemeSwitcher";
@@ -122,15 +123,17 @@ const Navbar = () => {
 
         <nav className="flex items-center justify-center flex-wrap ">
           <motion.a
+            title="Github"
             href="https://github.com/woo49m"
             target={"_blank"}
-            className="w-12 mr-6 flex items-center justify-center "
+            className="w-[50px] mr-6 flex items-center justify-center "
             whileHover={{ y: -5 }}
             whileTap={{ scale: 0.9 }}
           >
             <GithubIcon2 className="w-12 h-12" />
           </motion.a>
           <motion.a
+            title="Facebook"
             href="https://www.facebook.com/profile.php?id=100006633998705"
             target={"_blank"}
             className="w-12 mr-6 flex items-center justify-center"
@@ -140,6 +143,7 @@ const Navbar = () => {
             <FacebookIcon className="w-12 h-12" />
           </motion.a>
           <motion.a
+            title="Instagram"
             href="https://www.instagram.com/woo49m1128/"
             target={"_blank"}
             className="w-[50px] mr-6 flex items-center justify-center"
@@ -147,6 +151,16 @@ const Navbar = () => {
             whileTap={{ scale: 0.9 }}
           >
             <Insta2 />
+          </motion.a>
+          <motion.a
+            title="Mail"
+            href="mailto:woo49m@gmail.com"
+            target={"_blank"}
+            className="w-12 mr-6 flex items-center   justify-center "
+            whileHover={{ y: -5 }}
+            whileTap={{ scale: 0.9 }}
+          >
+            <Mail className="w-12 h-12 dark:fill-light" />
           </motion.a>
 
           <button
@@ -263,31 +277,44 @@ const Navbar = () => {
 
           <nav className="flex items-center justify-center flex-wrap mt-4 ">
             <motion.a
+              title="Github"
               href="https://github.com/woo49m"
               target={"_blank"}
-              className="w-12 sm:w-10 mr-6 flex items-center justify-center bg-light dark:bg-dark rounded-full "
+              className="w-12 sm:w-9 xs:mr-4 mr-6 flex items-center justify-center bg-light dark:bg-dark rounded-full "
               whileHover={{ y: -5 }}
               whileTap={{ scale: 0.9 }}
             >
               <GithubIcon2 />
             </motion.a>
             <motion.a
+              title="Facebook"
               href="https://www.facebook.com/profile.php?id=100006633998705"
               target={"_blank"}
-              className="w-12 sm:w-10 mr-6 flex items-center justify-center"
+              className="w-12 sm:w-9 xs:mr-4 mr-6 flex items-center justify-center"
               whileHover={{ y: -5 }}
               whileTap={{ scale: 0.9 }}
             >
               <FacebookIcon />
             </motion.a>
             <motion.a
+              title="Instagram"
               href="https://www.instagram.com/woo49m1128/"
               target={"_blank"}
-              className="w-12 sm:w-10 flex items-center justify-center"
+              className="w-12 sm:w-9 mr-6 xs:mr-4 flex items-center justify-center"
               whileHover={{ y: -5 }}
               whileTap={{ scale: 0.9 }}
             >
               <Insta2 />
+            </motion.a>
+            <motion.a
+              title="Mail"
+              href="mailto:woo49m@gmail.com"
+              target={"_blank"}
+              className="w-12 sm:w-9  flex items-center   justify-center "
+              whileHover={{ y: -5 }}
+              whileTap={{ scale: 0.9 }}
+            >
+              <Mail className="w-12 h-12 dark:fill-dark" />
             </motion.a>
           </nav>
           <button
