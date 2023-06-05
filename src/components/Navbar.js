@@ -72,7 +72,7 @@ const Navbar = () => {
   const [mode, setMode] = useThemeSwitcher();
   const [isOpen, setIsOpen] = useState(false);
 
-  const [langisOpen, setlangisOpen] = useState(false);
+  const [langisOpen, setlangisOpen] = useState(true);
   const { t, i18n } = useTranslation();
 
   const handleClick = () => {
@@ -234,10 +234,10 @@ const Navbar = () => {
                 } items-center justify-center absolute translate-y-2 left-[50%] -translate-x-[50%] `}
               >
                 <button
-                  className="w-10 mt-1 text-xs hover:underline hover:underline-offset-2 transition-all ease-in duration-100"
+                  className="w-10 mt-1  text-xs hover:underline hover:underline-offset-2 transition-all ease-in duration-100"
                   onClick={() => changeLng("en")}
                 >
-                  {t("Footer.EN")}
+                  <span className=" text-right">{t("Footer.EN")}</span>
                 </button>
                 <button
                   className="w-10 mt-1 text-xs hover:underline hover:underline-offset-2 transition-all ease-in duration-100"
