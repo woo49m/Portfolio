@@ -35,6 +35,7 @@ module.exports = {
       },
       animation: {
         "spin-slow": "spin 30s linear infinite",
+        "spin-slow-fast": "spin 2s linear infinite",
       },
       backgroundImage: {
         circularLight:

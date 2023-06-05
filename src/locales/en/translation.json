@@ -10,8 +10,12 @@
   "Index": {
     "Resume": "Resume",
     "Contact": "Contact",
-    "Head": "Self taught web developer with passion being better !",
-    "Content": "As a front end developer, I enjoy bringing the beautiful design to web applications. Explore my latest projects in React.js and web development. Furthurmore, I used to complete AI, XR, point cloud project which are also contained in my web portfolio."
+    "Head": "Hello, I'm Ian.",
+    "Head2": "A Web developer.",
+    "Content1": "Switch pages in left-up button to Explore more.",
+    "Content2": "【Home Page】Contact Info",
+    "Content3": "【About Page】Biology, Skiils, and Experience",
+    "Content4": "【Project Page】Website Applications"
   },
   "About": {
     "Biography": "Biography",
@@ -22,8 +26,8 @@
     "projects_completed": "projects completed",
     "web_applications": "web applications",
     "Bechelor_Content": "Hi, My name is Ian. I am a lively and easy-going person, and actively participate in many club activities during my college. Due to my appeal and influence, I often serve as the general convener or main cadre that make me have a lot of experience in event planning and executing.",
-    "Master_Content": "In this two year, I have learned C#, Python, and written code for two years. Ultimately, I developed two software related projects and had experience in meeting project requirements with owners. My fast learning ability and logical thinking enable me to plan orderly and execute when even facing with non-professional related projects. I have In the face of many difficulties, I am not afraid of any challenges, and I am willing to break through myself. During the process, I found it very interesting and attractive to produce productive things through logical knowledge and programming. and it sparked my interest in information Engineering, which made me finally choose to dedicate to it.",
-    "Graduated_Content": "At present, I have been self-studying front end web pages for about five months. I am capable of front end languages, React frameworks, CRA, Vite, Next.JS, TailwindCSS and other development kits such as Rdeux, Router, etc. In the future, I will not only keep learning more basic theory, back end knowledge, and development tools, but also cultivate development experience and design programming in order to become an excellent web developer!"
+    "Master_Content": "In this two year, I have learned C#, Python, and written code for two years. Ultimately, I developed two software related projects and had experience in meeting project requirements with owners. My fast learning ability and logical thinking enable me to plan orderly and execute when even dealing with non-professional related projects. In the face of many difficulties, I am not afraid of any challenges, and I'made willing to break through myself. During the process, I found it very interesting and attractive to produce productive things through logical knowledge and programming. and it sparked my interest in information Engineering, which made me finally choose to dedicate to it.",
+    "Graduated_Content": "At present, I have been self-studying front end web pages for about five months. I am capable of front end languages, React frameworks, CRA, Vite, Next.JS, Tailwind CSS and other development kits such as Rdeux, Router, etc. In the future, I will not only keep learning more basic theory, back end knowledge, and development tools, but also cultivate development experience and design programming in order to become an excellent web developer!"
   },
   "Skills": {
     "title": "Skills"

@@ -21,14 +21,20 @@ import HireMe from "./HireMe";
 const CustomLink = ({ href, title, className = "" }) => {
   const router = useRouter();
   return (
-    <Link href={href} className={`${className} relative group`}>
+    <Link
+      href={href}
+      className={`${className} ${
+        router.asPath === href
+          ? "bg-dark text-light dark:bg-light p-3 dark:!text-dark dark:hover:bg-light/90 "
+          : "dark:bg-dark dark:!text-light"
+      } rounded-full relative group`}
+    >
       {title}
 
       <span
         className={`h-[3px] bg-dark dark:bg-light
-        absolute inline-block left-0 -bottom-0.5 group-hover:w-full transition-[width] ease-linear duration-300 ${
-          router.asPath === href ? "w-full" : "w-0"
-        }`}
+        absolute inline-block left-0 w-0 rounded-full -bottom-0.5  transition-all ease-linear duration-300
+        ${router.asPath === href ? "" : "group-hover:w-full"} `}
       >
         &nbsp;
       </span>
@@ -180,7 +186,7 @@ const Navbar = () => {
               <div
                 className=" relative bg-gray-500 rounded-full mt-[0px] ml-6 mr-1 
             md:bg-gray-500 md:hover:bg-gray-400 p-[3px]
-            dark:bg-gradient-to-tl from-gradient1 to-gradient2  dark:md:hover:bg-gray-400 dark:bg-light 
+             dark:md:hover:bg-gray-400 dark:bg-light/75
             dark:hover:bg-light/75  hover:bg-dark/50 transition-all ease-in-out duration-100"
                 onClick={() => setlangisOpen(!langisOpen)}
               >
@@ -216,25 +222,25 @@ const Navbar = () => {
           <div
             className=" relative bg-gray-500 rounded-full mt-[0px] ml-6 mr-1 
             md:bg-gray-500 md:hover:bg-gray-400 p-[3px]
-            dark:bg-gradient-to-tl from-gradient1 to-gradient2  dark:md:hover:bg-gray-400 dark:bg-light 
+              dark:md:hover:bg-gray-400 dark:bg-light/75 
             dark:hover:bg-light/75  hover:bg-dark/50 transition-all ease-in-out duration-100"
             onClick={() => setlangisOpen(!langisOpen)}
           >
             <div className=" w-full bg-dark rounded-full">
-              <LanguageIcon className=" cursor-pointer fill-light md:w-[38px]    w-[44px] translate-y-[4px] h-auto "></LanguageIcon>
+              <LanguageIcon className=" cursor-pointer fill-light md:w-[38px]  w-[44px] translate-y-[4px] h-auto "></LanguageIcon>
               <div
                 className={`ease-in-out transition-all duration-500  ${
                   langisOpen ? "flex flex-col" : "hidden"
                 } items-center justify-center absolute translate-y-2 left-[50%] -translate-x-[50%] `}
               >
                 <button
-                  className="w-10 hover:underline hover:underline-offset-2 transition-all ease-in duration-100"
+                  className="w-10 mt-1 text-xs hover:underline hover:underline-offset-2 transition-all ease-in duration-100"
                   onClick={() => changeLng("en")}
                 >
                   {t("Footer.EN")}
                 </button>
                 <button
-                  className="w-10 hover:underline hover:underline-offset-2 transition-all ease-in duration-100"
+                  className="w-10 mt-1 text-xs hover:underline hover:underline-offset-2 transition-all ease-in duration-100"
                   onClick={() => changeLng("zh")}
                 >
                   {t("Footer.ZH")}
@@ -314,7 +320,7 @@ const Navbar = () => {
               whileHover={{ y: -5 }}
               whileTap={{ scale: 0.9 }}
             >
-              <Mail className="w-12 h-12 dark:fill-dark" />
+              <Mail className="w-12 h-12 fill-light dark:fill-dark" />
             </motion.a>
           </nav>
           <button

@@ -3,33 +3,37 @@
     "EN": "英文",
     "ZH": "中文",
     "Home": "主頁",
-    "About": "關於我",
-    "Project": "專案"
+    "About": "自我介紹",
+    "Project": "網頁作品"
   },
   "Hire": "信箱",
   "Index": {
     "Resume": "個人簡歷",
     "Contact": "信箱聯繫",
-    "Head": "我是Ian，目前自學前端技術，並以優秀的全端工程師為首要目標!",
-    "Content": "作為一位前端工程師，我熱衷於開發新創動人的設計網頁，從這裡可以查看我的最新ReactJS製作作品。此外，於專案頁面中也有展示過往研究室的專案Demo。"
+    "Head": "我是Ian",
+    "Head2": "專職網頁工程師",
+    "Content1": "點擊左上角分頁按鈕查看更多內容",
+    "Content2": "【主頁】聯絡資訊",
+    "Content3": "【關於】自傳、專業技術以及經驗",
+    "Content4": "【專案】網頁作品集"
   },
   "About": {
-    "Biography": "自我簡介",
+    "Biography": "簡介",
     "Bechelor": "學士階段",
     "Master": "碩士階段",
     "Graduated": "畢業後階段",
-    "Programming_Year": "累績編程時間/年",
+    "Programming_Year": "編程經驗/年",
     "projects_completed": "專案完成數量",
     "web_applications": "網頁開發數量",
     "Bechelor_Content": "我是徐雋硯，活潑隨和的個性讓我在大學期間參與了許多社團活動。由於在團體中具備號召力、影響力，因此時常擔任召集人或者主要幹部，具有活動組織、規劃經驗。",
-    "Master_Content": "本人畢業於成功大學土木研究所，主修營建管理。由於研究室長年引入人工智能、區塊鏈、點雲、XR(AR、MR、VR)等資訊技術提升管理效率，因此時常獲得產學合作的專案機會，這也使我在研究所時期，更多是偏向學習資訊知識，提升編程能力以及面對需求者進行專案的開發。於此兩年學習了C#、Python兩種程式語言，並累積兩年編程經驗，最終開發兩項軟體專案。快速的學習能力以及清晰的邏輯思維，讓我在面對非本科專業專案時，仍能井然有序地進行整體規劃與執行，不畏懼的精神也讓我在學習路上能夠得以堅持。在過程中，也逐漸發現通過邏輯與編程進行創造是非常有趣且吸引我的，這不僅激發了我對資訊工程的興趣，也使我最終選擇潛心學習。",
-    "Graduated_Content": "目前自學前端網頁技術，花費三個月時間學習HTML、CSS、Javascript、React框架、CRA、Vite、Next.JS、Tailwind以及Redux、Router等其他相輔套件，並於後續兩個月時間製作五項網頁作品，累積實務開發經驗。未來將會繼續學習更多的理論、後端知識和開發工具，同時也會持續培養開發經驗和程式設計思維，以優秀的全端工程師為首要目標!"
+    "Master_Content": "研究所兩年期間，學習了C#、Python兩種程式語言，並累積兩年編程經驗，最終開發兩項軟體專案，分別為【應用混合實境結合人工智能建立開口安全查核系統】以及【智能安全偵測系統】。快速的學習能力以及清晰的邏輯思維，讓我在面對非本科專業專案時，仍能井然有序地進行整體規劃與執行，不畏懼的精神也讓我在學習路上能夠得以堅持。在過程中，也逐漸發現通過邏輯與編程進行創造是非常有趣且吸引我的，這不僅激發了我對資訊工程的興趣，也使我最終選擇潛心學習。",
+    "Graduated_Content": "目前自學前端網頁技術，花費三個月時間學習HTML、CSS、Javascript、React框架、CRA、Vite、Next.JS、Tailwind以及Redux、Router等其他相輔套件，並於後續兩個月時間製作五項網頁作品，累積實務開發經驗。未來將會繼續學習更多的理論、後端知識和開發工具，同時也會持續培養開發經驗和程式設計思維，以優秀的全端工程師為首要目標"
   },
   "Skills": {
     "title": "專業能力"
   },
   "Experience": {
-    "title": "學習過程&專案經歷",
+    "title": "學習經歷",
     "Detail_Front": {
       "position": "前端網頁開發人員",
       "period": "畢業後階段",
@@ -52,11 +56,11 @@
       "Project_Skills": "技術 : ",
       "Project_Demo": "展示影片 : ",
       "content1": "應用混合實境結合人工智能建立開口安全查核系統",
-      "content2": "透過使用MR設備以及人工智能的結合，改善過往工地安檢人員作業資訊遺漏及冗長問題",
-      "content3": "C#語言於Unity進行編程，製作使用者介面",
-      "content4": "Python建立Mask-RCNN人工智能模型，進行圖像辨識與切割",
-      "content5": "Python與Scikit-Learn套件協助開發安全判斷演算法",
-      "content6": "使用Firebase資料庫儲存資訊"
+      "content2": "使用MR頭戴設備及AI的結合，改善過往工地安檢人員作業資訊遺漏及冗長問題",
+      "content3": "C#於Unity建立環境與UI",
+      "content4": "Keras、TensorFlow、PyTorch建立Mask-RCNN人工智能模型",
+      "content5": "Python與Scikit-Learn開發演算法",
+      "content6": "Firebase雲端資料庫"
     },
     "Detail_TSMC": {
       "position": "TSMC台積電合作專案",
@@ -72,8 +76,8 @@
       "content1": "智能安全偵測系統",
       "content2": "透過對每日新建工程之點雲蒐集，自動化進行安全判別",
       "content3": "每周專案會議，與業主進行進度報告以及需求調整",
-      "content4": "Python建立安全判定演算法及準則",
-      "content5": "C#語言於Unity進行編程，開發使用者介面",
+      "content4": "Python建立安全演算法",
+      "content5": "C#於Unity建立環境與UI",
       "content6": "點雲資訊處理能力"
     },
     "Detail_BIM": {
@@ -96,7 +100,7 @@
       "period": "碩士階段",
       "time": "2020.9 - 2020.11",
       "content1": "學習Python, C#語言",
-      "content2": "學習AI CNN預測模型的應用",
+      "content2": "學習AI、Keras、TensorFLow",
       "content3": "學習區塊鏈概念",
       "content4": "學習Unity以利開發XR應用"
     }

@@ -8,6 +8,20 @@ import { LinkArrow } from "@/components/Icons";
 import HireMe from "@/components/HireMe";
 import TransitionEffect from "@/components/TransitionEffect";
 import { useTranslation } from "react-i18next";
+import One from "../../public/images/profile/one.jpg";
+import Two from "../../public/images/profile/two.png";
+import Three from "../../public/images/profile/three.jpg";
+import Four from "../../public/images/profile/Four.jpg";
+import Five from "../../public/images/profile/Five.jpg";
+import Six from "../../public/images/profile/six.png";
+import Ian2 from "../../public/images/profile/Ian2.jpg";
+import Ian3 from "../../public/images/profile/Ian3.png";
+
+import Ian5 from "../../public/images/profile/Ian5.jpg";
+import Ian6 from "../../public/images/profile/Ian6.jpg";
+import Ian7 from "../../public/images/profile/Ian7.jpg";
+import Ian9 from "../../public/images/profile/Ian9.jpg";
+import Ian10 from "../../public/images/profile/Ian10.jpg";
 
 export default function Home() {
   const { t } = useTranslation();
@@ -24,30 +38,71 @@ export default function Home() {
       <main className="flex items-center text-dark w-full min-h-screen  dark:text-light">
         <Layout className="pt-0 md:p-16 sm:pt-8">
           <div className="flex items-center justify-between w-full lg:flex-col">
-            <div className="w-1/2 md:w-full">
-              <Image
-                src={profilePic}
-                alt="CodeBucks"
-                className="w-full h-auto lg:inline-block md:w-full"
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
-              />
+            <div className="w-2/3 xl:w-2/3 flex flex-row flex-wrap justify-center md:w-3/4 sm:w-4/5 xs:w-full">
+              <div className=" relative w-2/3 md:w-4/5   rounded-full shadow-xl ">
+                <Image
+                  src={Ian9}
+                  alt="Ian_Hsu"
+                  className="rounded-full h-auto lg:inline-block "
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+                />
+                <div
+                  className="w-[104%] h-[104%] animate-spin-slow-fast absolute left-[-2%] top-[-2%]
+                 rounded-full -z-10 bg-gradient-to-tl  from-gradient1 via-gradient2 to-gradient1"
+                ></div>
+              </div>
             </div>
-            <div className="w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center">
+            <div className="w-1/2 my-20 flex flex-col items-start lg:items-center self-center lg:w-full lg:text-center">
               <AnimatedText
                 text={t("Index.Head")}
                 className="!text-6xl !text-left 
                  xl:!text-5xl lg:!text-center lg:text-6xl md:!text-5xl sm:!text-3xl
                 "
               />
-              <p className="my-4 text-base font-medium md:text-sm sm:text-xs text-dark dark:text-light/80">
-                {t("Index.Content")}
-              </p>
+              <AnimatedText
+                text={t("Index.Head2")}
+                className="!text-6xl !text-left 
+                 xl:!text-5xl lg:!text-center lg:text-6xl md:!text-5xl sm:!text-3xl
+                "
+              />
+              <AnimatedText
+                text={t("Index.Content1")}
+                className="mt-4 !text-xl !text-left animate-pulse
+                 xl:!text-lg lg:!text-center lg:text-lg md:!text-lg sm:!text-base
+                "
+              />
 
-              <div className="flex items-center self-start mt-2 lg:self-center ">
+              {/*
+                <div className="my-4 -translate-x-1 flex flex-col items-start">
+                  <div
+                    className="mb-4 text-lg font-medium md:text-sm sm:text-xs text-dark dark:text-light
+                 bg-slate-500/50 px-2 py-1 rounded-full
+                "
+                  >
+                    {t("Index.Content2")}
+                  </div>
+                  <div
+                    className="mb-4 text-lg font-medium md:text-sm sm:text-xs text-dark dark:text-light
+                bg-slate-500/50 px-2 py-1 rounded-full
+                "
+                  >
+                    {t("Index.Content3")}
+                  </div>
+                  <p
+                    className="mb-4 text-lg font-medium md:text-sm sm:text-xs text-dark dark:text-light
+                bg-slate-500/50 px-2 py-1 rounded-full
+                "
+                  >
+                    {t("Index.Content4")}
+                  </p>
+                </div>
+                */}
+
+              <div className="flex items-center self-start mt-8 lg:self-center ">
                 <Link
-                  className="flex flex-row items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark
+                  className="flex flex-row items-center bg-dark text-light py-2 px-6 rounded-full text-lg font-semibold hover:bg-light hover:text-dark
                    border-2 border-solid border-transparent hover:border-dark dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light
-                   md:p-2 sm:px-4 md:text-base 
+                   md:p-2 sm:px-2 md:text-sm
                    "
                   href={"/resume.pdf"}
                   target="_blank"
@@ -58,7 +113,9 @@ export default function Home() {
                 <Link
                   href="mailto:woo49m@gmail.com"
                   target="_blank"
-                  className="ml-4 text-lg font-medium capitalize text-dark dark:text-light md:text-base"
+                  className="flex flex-row ml-4 items-center bg-dark text-light py-2 px-6 rounded-full text-lg font-semibold hover:bg-light hover:text-dark
+                  border-2 border-solid border-transparent hover:border-dark dark:bg-dark dark:text-light hover:dark:bg-light hover:dark:text-dark dark:border-light
+                  md:p-2 sm:px-2 md:text-sm "
                 >
                   {t("Index.Contact")}
                 </Link>
