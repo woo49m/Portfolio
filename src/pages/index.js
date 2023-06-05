@@ -9,7 +9,6 @@ import HireMe from "@/components/HireMe";
 import TransitionEffect from "@/components/TransitionEffect";
 import { useTranslation } from "react-i18next";
 
-import three from "../../public/images/profile/Three.jpg";
 import Ian9 from "../../public/images/profile/Ian9.jpg";
 import Ian10 from "../../public/images/profile/Ian10.jpg";
 
