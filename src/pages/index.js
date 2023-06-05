@@ -8,18 +8,7 @@ import { LinkArrow } from "@/components/Icons";
 import HireMe from "@/components/HireMe";
 import TransitionEffect from "@/components/TransitionEffect";
 import { useTranslation } from "react-i18next";
-import One from "../../public/images/profile/one.jpg";
-import Two from "../../public/images/profile/two.png";
-import Three from "../../public/images/profile/three.jpg";
-import Four from "../../public/images/profile/Four.jpg";
-import Five from "../../public/images/profile/Five.jpg";
-import Six from "../../public/images/profile/six.png";
-import Ian2 from "../../public/images/profile/Ian2.jpg";
-import Ian3 from "../../public/images/profile/Ian3.png";
 
-import Ian5 from "../../public/images/profile/Ian5.jpg";
-import Ian6 from "../../public/images/profile/Ian6.jpg";
-import Ian7 from "../../public/images/profile/Ian7.jpg";
 import Ian9 from "../../public/images/profile/Ian9.jpg";
 import Ian10 from "../../public/images/profile/Ian10.jpg";
 
