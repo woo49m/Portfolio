@@ -20,6 +20,36 @@ module.exports = {
       roman: "upper-roman",
     },
     extend: {
+      keyframes: {
+        ping_cus: {
+          "0%": {
+            transform: "scale(1)",
+            opacity: "1",
+          },
+          "25%": {
+            transform: "scale(1.05)",
+            opacity: "0.5",
+          },
+          "40%": {
+            transform: "scale(1.1)",
+            opacity: "0",
+          },
+          "60%": {
+            transform: "scale(1.1)",
+            opacity: "0",
+          },
+
+          "75%": {
+            transform: "scale(1.05)",
+            opacity: "0.5",
+          },
+          "100%": {
+            transform: "scale(1)",
+            opacity: "1",
+          },
+        },
+      },
+
       fontFamily: {
         sans: ["var(--font-montserrat)"],
         mono: ["var(--font-roboto-mono)"],
@@ -36,12 +66,16 @@ module.exports = {
       animation: {
         "spin-slow": "spin 30s linear infinite",
         "spin-slow-fast": "spin 2s linear infinite",
+        "ping-slow": "ping 3s infinte",
+        "ping-cus": "ping_cus 4s linear infinite",
       },
+
       backgroundImage: {
         circularLight:
           "repeating-radial-gradient(rgba(0,0,0,0.4) 2px, #f5f5f5 5px, #f5f5f5 100px);",
       },
     },
+
     screens: {
       "2xl": { max: "1535px" },
       // => @media (max-width: 1535px) { ... }

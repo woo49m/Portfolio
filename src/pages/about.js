@@ -16,6 +16,8 @@ import {
 import TransitionEffect from "@/components/TransitionEffect";
 import { useTranslation } from "react-i18next";
 
+import IanWork from "../../public/images/profile/Ian_work.jpg";
+
 const AnimatedNumbers = ({ value }) => {
   const ref = useRef(null);
 
@@ -53,6 +55,20 @@ const About = () => {
       <main className="flex w-full flex-col items-center justify-center dark:text-light">
         <Layout className="pt-16">
           <HireMe />
+          <div className="flex items-center w-full justify-center mt-4 mb-16 ">
+            <div className=" relative lg:w-1/2 w-1/3 dark:bg-gradient-to-tl from-gradient1 via-gradient2 to-gradient1 bg-dark/60  rounded-full ">
+              <Image
+                src={IanWork}
+                alt="Ian_Hsu"
+                className="rounded-full flex justify-center border-[6px] border-dark border-solid items-center w-full h-auto lg:inline-block "
+              />
+              <div
+                className="w-[102%] h-[102%] animate-spin-slow-fast absolute left-[-1%] top-[-1%]
+                 rounded-full -z-10 bg-gradient-to-tl from-gradient1 via-gradient2 to-gradient1"
+              ></div>
+            </div>
+          </div>
+
           <AnimatedText
             text={t("About.Biography")}
             className="mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8 "

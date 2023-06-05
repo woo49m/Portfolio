@@ -9,6 +9,7 @@ import HireMe from "@/components/HireMe";
 import TransitionEffect from "@/components/TransitionEffect";
 import { useTranslation } from "react-i18next";
 
+import three from "../../public/images/profile/Three.jpg";
 import Ian9 from "../../public/images/profile/Ian9.jpg";
 import Ian10 from "../../public/images/profile/Ian10.jpg";
 
@@ -27,8 +28,8 @@ export default function Home() {
       <main className="flex items-center text-dark w-full min-h-screen  dark:text-light">
         <Layout className="pt-0 md:p-16 sm:pt-8">
           <div className="flex items-center justify-between w-full lg:flex-col">
-            <div className="w-2/3 xl:w-2/3 flex flex-row flex-wrap justify-center md:w-3/4 sm:w-4/5 xs:w-full">
-              <div className=" relative w-2/3 md:w-4/5   rounded-full shadow-xl ">
+            <div className="w-2/3 xl:w-2/3  flex flex-row  flex-wrap justify-center md:w-3/4 sm:w-4/5 xs:w-full">
+              <div className=" relative w-3/4 md:w-4/5 rounded-full  shadow-xl ">
                 <Image
                   src={Ian9}
                   alt="Ian_Hsu"
@@ -36,7 +37,7 @@ export default function Home() {
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
                 />
                 <div
-                  className="w-[104%] h-[104%] animate-spin-slow-fast absolute left-[-2%] top-[-2%]
+                  className="w-[104%] h-[104%] animate-ping-cus  absolute left-[-2%] top-[-2%]
                  rounded-full -z-10 bg-gradient-to-tl  from-gradient1 via-gradient2 to-gradient1"
                 ></div>
               </div>
