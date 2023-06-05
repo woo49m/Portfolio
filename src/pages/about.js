@@ -63,7 +63,7 @@ const About = () => {
                 className="rounded-full flex justify-center border-[6px] border-dark border-solid items-center w-full h-auto lg:inline-block "
               />
               <div
-                className="w-[102%] h-[102%] animate-spin-slow-fast absolute left-[-1%] top-[-1%]
+                className="w-[104%] h-[104%] animate-spin-slow-fast  absolute left-[-2%] top-[-2%]
                  rounded-full -z-10 bg-gradient-to-tl from-gradient1 via-gradient2 to-gradient1"
               ></div>
             </div>

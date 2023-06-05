@@ -28,7 +28,7 @@ export default function Home() {
         <Layout className="pt-0 md:p-16 sm:pt-8">
           <div className="flex items-center justify-between w-full lg:flex-col">
             <div className="w-2/3 xl:w-2/3  flex flex-row  flex-wrap justify-center md:w-3/4 sm:w-4/5 xs:w-full">
-              <div className=" relative w-3/4 md:w-4/5 rounded-full  shadow-xl ">
+              <div className=" relative w-2/3 md:w-4/5 rounded-full  shadow-xl ">
                 <Image
                   src={Ian9}
                   alt="Ian_Hsu"
