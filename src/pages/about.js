@@ -83,20 +83,20 @@ const About = () => {
                 <h2 className="mb-1 text-2xl lg:text-xl font-bold  text-dark/75 dark:text-light/90">
                   {t("About.Bechelor")}
                 </h2>
-                <p className="text-xl lg:text-lg md:text-base sm:text-sm font-medium text-justify ">
+                <p className="text-xl lg:text-lg md:text-base sm:text-sm font-medium  ">
                   {t("About.Bechelor_Content")}
                 </p>
                 <h2 className="mb-1 mt-8 text-2xl lg:text-xl font-bold  text-dark/75 dark:text-light/90">
                   {t("About.Master")}
                 </h2>
-                <p className="text-xl lg:text-lg md:text-base sm:text-sm font-medium text-justify ">
+                <p className="text-xl lg:text-lg md:text-base sm:text-sm font-medium  ">
                   {t("About.Master_Content")}
                 </p>
 
                 <h2 className="mb-1  mt-8 text-2xl lg:text-xl font-bold  text-dark/75 dark:text-light/90">
                   {t("About.Graduated")}
                 </h2>
-                <p className="text-xl lg:text-lg md:text-base sm:text-sm font-medium  text-justify ">
+                <p className="text-xl lg:text-lg md:text-base sm:text-sm font-medium   ">
                   {t("About.Graduated_Content")}
                 </p>
               </div>
