@@ -93,7 +93,7 @@ export default function Home() {
                    border-2 border-solid border-transparent hover:border-dark dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light
                    md:p-2 sm:px-2 md:text-sm
                    "
-                  href={"/resume_ZN.pdf"}
+                  href={"/resume_ZH.pdf"}
                   target="_blank"
                   download={true}
                 >
