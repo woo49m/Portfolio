@@ -201,7 +201,7 @@ const Projects = () => {
               />
             </motion.div>
 
-            <motion.div
+            {/* <motion.div
               className=" col-span-12 "
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
@@ -216,7 +216,7 @@ const Projects = () => {
                 github="https://github.com/woo49m/realtime-weather-app"
                 img={weather}
               />
-            </motion.div>
+            </motion.div> */}
             <motion.div
               className=" col-span-12 "
               initial={{ opacity: 0 }}
