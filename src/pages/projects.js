@@ -26,20 +26,31 @@ const FeatureProject = ({ type, title, summary, img, link, github }) => {
       lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4
      "
     >
-      <Link
-        href={link}
-        target="_blank"
-        className="w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full"
-      >
-        <FramerImage
-          whileHover={{ scale: 1.05 }}
-          transition={{ duration: 0.2 }}
-          src={img}
-          alt={title}
-          className="w-full h-auto"
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
-        />
-      </Link>
+      {link ? (
+        <Link
+          href={link}
+          target="_blank"
+          className="w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full"
+        >
+          <FramerImage
+            whileHover={{ scale: 1.05 }}
+            transition={{ duration: 0.2 }}
+            src={img}
+            alt={title}
+            className="w-full h-auto"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+          />
+        </Link>
+      ) : (
+        <div className="w-1/2 overflow-hidden rounded-lg lg:w-full opacity-50 cursor-not-allowed">
+          <FramerImage
+            src={img}
+            alt={title}
+            className="w-full h-auto"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+          />
+        </div>
+      )}
 
       <div className="w-1/2 flex flex-col items-start justify-between pl-6 dark:text-light lg:w-full lg:pl-0 lg:pt-6">
         <span className="text-primary dark:text-primaryDark font-medium text-xl xs:text-base ">
@@ -48,7 +59,7 @@ const FeatureProject = ({ type, title, summary, img, link, github }) => {
         <Link
           href={link}
           target="_blank"
-          className=" hover:underline underline-offset-2 "
+          className={" hover:underline underline-offset-2 "}
         >
           <h2 className=" my-2 w-full text-left text-4xl font-bold sm:text-sm ">
             {title}
@@ -61,17 +72,22 @@ const FeatureProject = ({ type, title, summary, img, link, github }) => {
           <Link href={github} target="_blank" className="w-10">
             <GithubIcon2 className=" hover:scale-125 hover:-translate-y-1 transition-all duration-100 " />
           </Link>
-          <Link
-            href={link}
-            target="_blank"
-            className="ml-4 rounded-lg border-2 bg-dark dark:bg-light text-light dark:text-dark p-2 px-6 
-            text-lg font-semibold hover:bg-light hover:text-dark hover:border-dark hover:border-2
-             hover:dark:text-light hover:dark:bg-dark hover:dark:border-light  transition-all duration-100
-            sm:px-4 sm:text-base
-            "
-          >
-            {t("Project.visit")}
-          </Link>
+          {link ? (
+            <Link
+              href={link}
+              target="_blank"
+              className="ml-4 rounded-lg border-2 bg-dark dark:bg-light text-light dark:text-dark p-2 px-6 
+    text-lg font-semibold hover:bg-light hover:text-dark hover:border-dark hover:border-2
+    hover:dark:text-light hover:dark:bg-dark hover:dark:border-light transition-all duration-100
+    sm:px-4 sm:text-base"
+            >
+              {t("Project.visit")}
+            </Link>
+          ) : (
+            <div className="ml-4 rounded-lg border-2 bg-gray-400 text-gray-700 p-2 px-6 text-lg font-semibold cursor-not-allowed sm:px-4 sm:text-base">
+              尚未部署
+            </div>
+          )}
         </div>
       </div>
     </article>
@@ -178,7 +194,7 @@ const Projects = () => {
               <FeatureProject
                 title={t("Project.Project2.title")}
                 summary={t("Project.Project2.summary")}
-                link="https://netflix-clone-project-two.vercel.app/"
+                link="" //"https://netflix-clone-project-two.vercel.app/"
                 type={t("Project.Project2.type")}
                 github="https://github.com/woo49m/netflix_clone_project"
                 img={netflix}
